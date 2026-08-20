@@ -1,0 +1,6 @@
+# 本地浏览器预览与截图缓存
+.playwright-mcp/
+
+# 操作系统临时文件
+Thumbs.db
+.DS_Store
