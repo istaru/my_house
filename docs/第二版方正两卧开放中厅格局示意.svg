@@ -8,7 +8,9 @@
       .room-note { font-size: 13px; fill: #4b5565; text-anchor: middle; }
       .wall { stroke: #172033; stroke-width: 10; fill: none; stroke-linejoin: round; }
       .partition { stroke: #384152; stroke-width: 5; fill: none; }
+      .feature { stroke: #384152; stroke-width: 8; fill: none; stroke-linecap: round; }
       .soft { stroke: #8b93a4; stroke-width: 3; stroke-dasharray: 10 8; fill: none; }
+      .furni { fill: #d8b68b; opacity: 0.85; }
       .window { stroke: #2d9cdb; stroke-width: 9; stroke-linecap: round; }
       .door { stroke: #e15f41; stroke-width: 5; fill: none; }
       .dim { stroke: #788195; stroke-width: 2; fill: none; }
@@ -22,100 +24,140 @@
   </defs>
 
   <rect width="1380" height="980" fill="#f8fafc"/>
-  <text x="60" y="55" class="title">民居第二版｜方正两卧开放中厅</text>
+  <text x="60" y="55" class="title">民居格局示意｜方正主体两卧一卫</text>
   <text x="60" y="84" class="subtitle">概念平面｜上西、右北、下东、左南｜约 11.00m × 11.058m＝121.64㎡｜非施工图</text>
 
   <!-- 房间底色 -->
-  <rect x="220" y="130" width="192" height="216" fill="#e8f0fe"/>
-  <rect x="412" y="130" width="156" height="216" fill="#f2eafe"/>
-  <rect x="568" y="130" width="144" height="216" fill="#fff0d2"/>
-  <rect x="712" y="130" width="168" height="216" fill="#ffe6d9"/>
+  <rect x="220" y="130" width="210" height="216" fill="#e8f0fe"/>
+  <rect x="430" y="130" width="210" height="216" fill="#f2eafe"/>
+  <rect x="640" y="130" width="240" height="216" fill="#ffe6d9"/>
 
-  <rect x="220" y="346" width="138" height="174" fill="#dff7f5"/>
-  <rect x="358" y="346" width="54" height="174" fill="#f1f3f6"/>
-  <rect x="220" y="520" width="192" height="274" fill="#e8f0fe"/>
+  <rect x="220" y="346" width="147" height="156" fill="#dff7f5"/>
+  <rect x="367" y="346" width="63" height="156" fill="#f1f3f6"/>
+  <rect x="220" y="502" width="210" height="292" fill="#e8f0fe"/>
 
-  <rect x="412" y="346" width="468" height="144" fill="#fff5df"/>
-  <rect x="412" y="490" width="156" height="304" fill="#f4eadc"/>
-  <rect x="568" y="490" width="312" height="304" fill="#ffe9c7"/>
+  <rect x="430" y="346" width="210" height="156" fill="#fff5df"/>
+  <rect x="640" y="346" width="240" height="156" fill="#fff0d2"/>
+  <rect x="430" y="502" width="210" height="138" fill="#ffe9c7"/>
+  <rect x="640" y="502" width="240" height="292" fill="#ffe9c7"/>
+  <rect x="430" y="640" width="210" height="154" fill="#f4eadc"/>
 
-  <!-- 外墙与分隔 -->
+  <!-- 外墙 -->
   <rect x="220" y="130" width="660" height="664" class="wall"/>
-  <path d="M412 130 V346 M568 130 V346 M712 130 V346" class="partition"/>
-  <path d="M220 346 H365 M407 346 H412 M412 346 H568 M712 346 H880" class="partition"/>
-  <path d="M220 520 H365 M407 520 H412 M358 346 V405 M358 450 V520 M412 520 V794" class="partition"/>
-  <path d="M568 490 V794 M412 490 H880" class="soft"/>
-  <path d="M568 346 H712" class="soft"/>
 
-  <!-- 两卧室与卫生间共用开放短廊；三扇门均向房间内开 -->
-  <path d="M365 346 H407" stroke="#e8f0fe" stroke-width="12"/>
-  <path d="M365 346 V304 A42 42 0 0 1 407 346" class="door"/>
-  <path d="M358 405 V450" stroke="#dff7f5" stroke-width="12"/>
-  <path d="M358 450 H313 A45 45 0 0 1 358 405" class="door"/>
-  <path d="M365 520 H407" stroke="#e8f0fe" stroke-width="12"/>
-  <path d="M365 520 V562 A42 42 0 0 0 407 520" class="door"/>
+  <!-- 内隔墙（缺口即门洞） -->
+  <path d="M220 346 H372 M426 346 H586 M694 346 H880" class="partition"/>
+  <path d="M430 130 V346 M640 130 V346" class="partition"/>
+  <path d="M367 346 V448 M367 496 V502" class="partition"/>
+  <path d="M220 502 H372 M426 502 H430" class="partition"/>
+  <path d="M430 502 V794" class="partition"/>
 
-  <!-- 书房、厨房 -->
-  <path d="M470 346 H520" stroke="#fff5df" stroke-width="12"/>
-  <path d="M470 346 V296 A50 50 0 0 1 520 346" class="door"/>
-  <path d="M765 346 H815" stroke="#fff5df" stroke-width="12"/>
-  <path d="M765 346 V296 A50 50 0 0 1 815 346" class="door"/>
+  <!-- 客厅墙：从正门/玄关一侧的南墙延伸到与玄关北边界平齐，全长与玄关进深相同，中间不再留门洞 -->
+  <path d="M640 640 V794" class="feature"/>
+  <rect x="646" y="648" width="20" height="138" rx="4" class="furni"/>
+  <rect x="647" y="682" width="8" height="70" rx="2" fill="#2b3444"/>
+  <rect x="821" y="643" width="54" height="148" rx="8" class="furni"/>
+  <rect x="833" y="651" width="34" height="132" rx="6" fill="#f6ece0"/>
+  <rect x="767" y="643" width="54" height="52" rx="7" class="furni"/>
+  <rect x="773" y="649" width="42" height="40" rx="5" fill="#f6ece0"/>
+  <rect x="767" y="739" width="54" height="52" rx="7" class="furni"/>
+  <rect x="773" y="745" width="42" height="40" rx="5" fill="#f6ece0"/>
+  <rect x="730" y="699" width="72" height="36" rx="4" fill="#c9a877"/>
 
-  <!-- 正门与厨房后门 -->
-  <path d="M470 794 H550" stroke="#f8fafc" stroke-width="14"/>
-  <path d="M470 794 V714 A80 80 0 0 1 550 794" class="door"/>
-  <text x="575" y="838" class="outside">东侧正门</text>
-  <path d="M880 205 V270" stroke="#f8fafc" stroke-width="14"/>
-  <path d="M880 205 H815 A65 65 0 0 1 880 270" class="door"/>
-  <text x="913" y="230" class="outside">北侧厨房后门</text>
+  <!-- 开放区软分界 -->
+  <path d="M430 502 H880 M640 346 V502 M430 640 H640 M640 502 V640" class="soft"/>
+
+  <!-- 短廊门：卧室1、卧室2；卫生间门移到东墙脚，均向房间内开 -->
+  <path d="M372 346 H426" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M372 346 V292 A54 54 0 0 1 426 346" class="door"/>
+  <path d="M367 448 V496" stroke="#dff7f5" stroke-width="12"/>
+  <path d="M367 496 H319 A48 48 0 0 1 367 448" class="door"/>
+  <path d="M372 502 H426" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M372 502 V556 A54 54 0 0 0 426 502" class="door"/>
+
+  <!-- 书房门、厨房门：书房门与东墙相接，厨房门位于南墙脚 -->
+  <path d="M586 346 H640" stroke="#fff5df" stroke-width="12"/>
+  <path d="M640 346 V292 A54 54 0 0 0 586 346" class="door"/>
+  <path d="M640 346 H694" stroke="#fff0d2" stroke-width="12"/>
+  <path d="M640 346 V292 A54 54 0 0 1 694 346" class="door"/>
+
+  <!-- 东墙中部正门（1.8m 双开）与东墙角厨房后门 -->
+  <path d="M481 794 H589" stroke="#f8fafc" stroke-width="14"/>
+  <path d="M481 794 V740 A54 54 0 0 1 535 794" class="door"/>
+  <path d="M589 794 V740 A54 54 0 0 0 535 794" class="door"/>
+  <text x="535" y="816" class="outside" text-anchor="middle">东墙中部正门 1.8m 双开</text>
+  <path d="M880 292 V346" stroke="#f8fafc" stroke-width="14"/>
+  <path d="M880 346 H826 A54 54 0 0 1 880 292" class="door"/>
+  <text x="913" y="322" class="outside">东墙角厨房后门</text>
 
   <!-- 外窗 -->
-  <path d="M220 190 V270 M220 385 V450 M220 590 V690" class="window"/>
-  <path d="M450 130 H530 M600 130 H680 M755 130 H835" class="window"/>
-  <path d="M880 390 V455 M880 565 V670" class="window"/>
-  <path d="M270 794 H350 M605 794 H700 M745 794 H830" class="window"/>
+  <!-- 外窗：按对应房间墙段中部布置；每个房间同墙一扇 -->
+  <path d="M220 193 V283 M220 399 V449 M220 603 V693" class="window"/>
+  <path d="M280 130 H370 M480 130 H590 M700 130 H820" class="window"/>
+  <path d="M880 208 V268 M880 386 V462 M880 595 V701" class="window"/>
+  <path d="M280 794 H370 M715 794 H805" class="window"/>
 
   <!-- 房间标签 -->
-  <text x="316" y="225" class="room-title">卧室 1</text>
-  <text x="316" y="252" class="room-note">南向｜约11.5㎡分格</text>
-  <text x="490" y="225" class="room-title">书房</text>
-  <text x="490" y="252" class="room-note">西向｜约9.4㎡分格</text>
-  <text x="640" y="225" class="room-title">六人餐厅</text>
-  <text x="640" y="252" class="room-note">与客厅开放连接</text>
-  <text x="796" y="225" class="room-title">柴火厨房</text>
-  <text x="796" y="252" class="room-note">双灶｜水槽｜冰箱</text>
+  <text x="325" y="228" class="room-title">卧室 1</text>
+  <text x="325" y="255" class="room-note">3.5×3.6＝12.6㎡</text>
+  <text x="325" y="278" class="room-note">南窗＋西窗｜双面采光</text>
 
-  <text x="289" y="411" class="room-title">卫生间</text>
-  <text x="289" y="438" class="room-note">淋浴｜蹲便｜盆</text>
-  <text x="289" y="465" class="room-note">洗衣机位</text>
-  <text x="385" y="433" class="room-note" transform="rotate(-90 385 433)">开放短廊</text>
-  <text x="316" y="645" class="room-title">卧室 2</text>
-  <text x="316" y="672" class="room-note">南向＋东窗｜整墙衣柜</text>
+  <text x="535" y="228" class="room-title">书房</text>
+  <text x="535" y="255" class="room-note">3.5×3.6＝12.6㎡</text>
+  <text x="535" y="278" class="room-note">西窗｜直接开向过厅</text>
 
-  <text x="646" y="415" class="room-title">开放过厅</text>
-  <text x="646" y="442" class="room-note">连接书房、餐厅、厨房和客厅</text>
-  <text x="490" y="625" class="room-title">玄关</text>
-  <text x="490" y="652" class="room-note">鞋柜｜换鞋凳｜入户屏风</text>
-  <text x="724" y="625" class="room-title">开放客厅</text>
-  <text x="724" y="652" class="room-note">参考图式大客厅｜东、北双向采光</text>
-  <rect x="470" y="715" width="80" height="44" rx="6" fill="#d8b68b" opacity="0.9"/>
-  <text x="510" y="742" class="room-note">玄关柜</text>
+  <text x="760" y="228" class="room-title">柴火厨房</text>
+  <text x="760" y="255" class="room-note">4.0×3.6＝14.4㎡</text>
+  <text x="760" y="278" class="room-note">柴火灶｜水槽｜冰箱｜操作台｜储柴带</text>
+
+  <text x="293" y="440" class="room-title">卫生间</text>
+  <text x="293" y="464" class="room-note">2.45×2.6＝6.4㎡</text>
+  <text x="293" y="486" class="room-note">淋浴｜蹲便｜盆｜洗衣机</text>
+  <text x="398" y="424" class="room-note" transform="rotate(-90 398 424)">开放短廊 1.05m｜同大厅做法</text>
+
+  <text x="325" y="628" class="room-title">卧室 2（主卧）</text>
+  <text x="325" y="655" class="room-note">3.5×4.87＝17.0㎡</text>
+  <text x="325" y="678" class="room-note">南窗＋东窗｜整墙衣柜</text>
+  <text x="325" y="701" class="room-note">含原储藏间 4.4㎡</text>
+
+  <text x="535" y="414" class="room-title">开放过厅</text>
+  <text x="535" y="441" class="room-note">9.1㎡｜连接书房与短廊</text>
+
+  <text x="760" y="414" class="room-title">六人餐厅</text>
+  <text x="760" y="441" class="room-note">10.4㎡｜紧邻厨房门</text>
+
+  <text x="535" y="555" class="room-title">茶座区</text>
+  <text x="535" y="580" class="room-note">8.1㎡｜开放待客角</text>
+  <text x="535" y="602" class="room-note">北侧与客厅直接打通</text>
+
+  <text x="760" y="560" class="room-title">开放客厅</text>
+  <text x="760" y="585" class="room-note">19.5㎡｜3＋1＋1 围合沙发</text>
+  <text x="760" y="607" class="room-note">电视墙通长矮柜 2.3m｜北墙高窗＋东墙落地窗</text>
+
+  <text x="530" y="672" class="room-title">玄关</text>
+  <text x="530" y="695" class="room-note">3.5×2.57＝9.0㎡</text>
+  <text x="525" y="717" class="room-note">左手主卧墙｜右手客厅墙（实墙）</text>
 
   <!-- 室外 -->
-  <path d="M510 872 V818" class="dim" marker-end="url(#arrow)"/>
-  <text x="510" y="897" class="outside" text-anchor="middle">东侧前院｜两车位</text>
-  <path d="M955 310 H895" class="dim" marker-end="url(#arrow)"/>
-  <text x="962" y="292" class="outside">北侧有顶储柴</text>
-  <text x="962" y="317" class="outside">完整外墙，无房间凸出</text>
+  <path d="M955 300 H895" class="dim" marker-end="url(#arrow)"/>
+  <text x="962" y="282" class="outside">东侧家务院｜储柴、晾晒</text>
+  <text x="962" y="307" class="outside">完整方正外墙，无房间凸出</text>
+  <path d="M955 717 H895" class="dim" marker-end="url(#arrow)"/>
+  <text x="962" y="712" class="outside">沙发上方高窗（窗台约 1.1m）</text>
 
   <!-- 尺寸 -->
-  <path d="M220 105 H880 M220 97 V113 M880 97 V113" class="dim"/>
-  <text x="550" y="96" class="dim-text">南北约 11.00m</text>
   <path d="M190 130 V794 M182 130 H198 M182 794 H198" class="dim"/>
   <text x="162" y="462" class="dim-text" transform="rotate(-90 162 462)">东西约 11.058m</text>
+  <path d="M220 858 H880 M220 850 V866 M430 850 V866 M640 850 V866 M880 850 V866" class="dim"/>
+  <text x="325" y="846" class="dim-text">3.50</text>
+  <text x="535" y="846" class="dim-text">3.50</text>
+  <text x="760" y="846" class="dim-text">4.00</text>
+  <path d="M220 890 H880 M220 882 V898 M880 882 V898" class="dim"/>
+  <text x="550" y="881" class="dim-text">南北约 11.00m</text>
+  <text x="550" y="920" class="outside" text-anchor="middle">东侧前院｜两车位</text>
 
   <!-- 方位 -->
-  <g transform="translate(1060 165)">
+  <g transform="translate(1080 165)">
     <circle cx="0" cy="0" r="58" fill="#ffffff" stroke="#9aa3b2" stroke-width="2"/>
     <path d="M0 35 V-35 M-35 0 H35" stroke="#596579" stroke-width="3" marker-end="url(#arrow)"/>
     <text x="0" y="-44" class="legend" text-anchor="middle">西</text>
@@ -125,13 +167,15 @@
   </g>
 
   <!-- 图例 -->
-  <g transform="translate(220 930)">
+  <g transform="translate(220 946)">
     <rect x="0" y="0" width="22" height="22" fill="#e8f0fe"/><text x="32" y="17" class="legend">卧室</text>
-    <rect x="105" y="0" width="22" height="22" fill="#f2eafe"/><text x="137" y="17" class="legend">书房</text>
-    <rect x="210" y="0" width="22" height="22" fill="#fff0d2"/><text x="242" y="17" class="legend">餐厅</text>
-    <rect x="315" y="0" width="22" height="22" fill="#ffe6d9"/><text x="347" y="17" class="legend">厨房</text>
-    <rect x="420" y="0" width="22" height="22" fill="#dff7f5"/><text x="452" y="17" class="legend">卫生间</text>
-    <rect x="555" y="0" width="22" height="22" fill="#ffe9c7"/><text x="587" y="17" class="legend">客厅</text>
-    <line x1="680" y1="11" x2="725" y2="11" class="window"/><text x="740" y="17" class="legend">外窗</text>
+    <rect x="100" y="0" width="22" height="22" fill="#f2eafe"/><text x="132" y="17" class="legend">书房</text>
+    <rect x="200" y="0" width="22" height="22" fill="#ffe6d9"/><text x="232" y="17" class="legend">厨房</text>
+    <rect x="300" y="0" width="22" height="22" fill="#dff7f5"/><text x="332" y="17" class="legend">卫生间</text>
+    <rect x="415" y="0" width="22" height="22" fill="#f4eadc"/><text x="447" y="17" class="legend">玄关</text>
+    <rect x="520" y="0" width="22" height="22" fill="#ffe9c7"/><text x="552" y="17" class="legend">开放区</text>
+    <line x1="640" y1="11" x2="685" y2="11" class="window"/><text x="700" y="17" class="legend">外窗</text>
+    <line x1="760" y1="3" x2="760" y2="20" class="feature"/><text x="778" y="17" class="legend">客厅墙</text>
+    <rect x="860" y="0" width="22" height="22" class="furni"/><text x="892" y="17" class="legend">沙发／电视柜</text>
   </g>
 </svg>
