@@ -94,10 +94,11 @@
   <path d="M880 376.8 H826 A54 54 0 0 1 880 322.8" class="door"/>
   <text x="913" y="392" class="outside">东墙角厨房后门</text>
 
-  <!-- 外窗：按对应房间墙段中部布置；每个房间同墙一扇 -->
+  <!-- 外窗：按对应房间墙段中部布置；每个房间同墙最多一扇 -->
+  <!-- 卧室 3 西窗、卧室 2 北窗已暂时取消，墙上预留位置，随时可加回 -->
   <path d="M220 203 V311 M220 435 V489 M220 613 V721" class="window"/>
-  <path d="M271 130 H379 M481 130 H589 M706 130 H814" class="window"/>
-  <path d="M880 203 V311 M880 408 V548 M880 629 V737" class="window"/>
+  <path d="M481 130 H589 M706 130 H814" class="window"/>
+  <path d="M880 203 V311 M880 408 V548" class="window"/>
   <path d="M271 794 H379 M706 794 H814" class="window"/>
 
   <!-- 四张 1.5×2.0m 床：卧室 1／2 床头靠西墙，卧室 3／4 床头靠北墙 -->
@@ -159,7 +160,7 @@
   <!-- 房间标签 -->
   <text x="325" y="160" class="room-title">卧室 3</text>
   <text x="325" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="325" y="208" class="room-note">南窗＋西窗｜双面采光</text>
+  <text x="325" y="208" class="room-note">仅南窗｜西墙窗暂时取消</text>
 
   <text x="535" y="160" class="room-title">卧室 4</text>
   <text x="535" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
@@ -191,7 +192,7 @@
 
   <text x="760" y="730" class="room-title">卧室 2</text>
   <text x="760" y="757" class="room-note">4.0×3.70＝14.8㎡</text>
-  <text x="760" y="779" class="room-note">东窗＋北窗｜双面采光</text>
+  <text x="760" y="779" class="room-note">仅东窗｜北墙窗暂时取消</text>
 
   <!-- 室外 -->
   <path d="M955 257 H895" class="dim" marker-end="url(#arrow)"/>
