@@ -95,10 +95,10 @@
   <text x="913" y="392" class="outside">东墙角厨房后门</text>
 
   <!-- 外窗：按对应房间墙段中部布置；每个房间同墙一扇 -->
-  <path d="M220 212 V302 M220 437 V487 M220 622 V712" class="window"/>
-  <path d="M280 130 H370 M480 130 H590 M700 130 H820" class="window"/>
-  <path d="M880 212 V302 M880 408 V548 M880 638 V728" class="window"/>
-  <path d="M280 794 H370 M715 794 H805" class="window"/>
+  <path d="M220 203 V311 M220 435 V489 M220 613 V721" class="window"/>
+  <path d="M271 130 H379 M481 130 H589 M700 130 H820" class="window"/>
+  <path d="M880 203 V311 M880 408 V548 M880 629 V737" class="window"/>
+  <path d="M271 794 H379 M706 794 H814" class="window"/>
 
   <!-- 四张 1.5×2.0m 床：卧室 1／2 床头靠西墙，卧室 3／4 床头靠北墙 -->
   <rect x="265" y="540" width="90" height="120" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>

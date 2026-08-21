@@ -101,25 +101,25 @@
   <path d="M1080 506.8 H1026 A54 54 0 0 1 1080 452.8" class="door"/>
 
   <!-- ============ 外窗 ============ -->
-  <path d="M480 260 H570 M690 260 H780 M900 260 H1020" class="window"/>
-  <path d="M420 342 V432 M420 565 V619 M420 752 V842" class="window"/>
-  <path d="M1080 342 V432 M1080 538 V678 M1080 768 V858" class="window"/>
-  <path d="M480 924 H570 M915 924 H1005" class="window"/>
+  <path d="M471 260 H579 M681 260 H789 M900 260 H1020" class="window"/>
+  <path d="M420 333 V441 M420 565 V619 M420 743 V851" class="window"/>
+  <path d="M1080 333 V441 M1080 538 V678 M1080 759 V867" class="window"/>
+  <path d="M471 924 H579 M906 924 H1014" class="window"/>
 
   <!-- ============ 门窗编号 ============ -->
-  <text x="525" y="250" class="tag">C1515</text>
-  <text x="735" y="250" class="tag">C1515</text>
+  <text x="525" y="250" class="tag">C1815</text>
+  <text x="735" y="250" class="tag">C1815</text>
   <text x="960" y="250" class="tag">C2015</text>
-  <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1515</text>
+  <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1815</text>
   <text x="408" y="592" class="tag" transform="rotate(-90 408 592)">C0909</text>
-  <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1515</text>
-  <text x="1092" y="387" class="tag" transform="rotate(-90 1092 387)">C1515</text>
+  <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1815</text>
+  <text x="1092" y="387" class="tag" transform="rotate(-90 1092 387)">C1815</text>
   <text x="1092" y="608" class="tag" transform="rotate(-90 1092 608)">C2325</text>
-  <text x="1092" y="813" class="tag" transform="rotate(-90 1092 813)">C1515</text>
+  <text x="1092" y="813" class="tag" transform="rotate(-90 1092 813)">C1815</text>
   <text x="1092" y="480" class="tag" transform="rotate(-90 1092 480)">M0921</text>
-  <text x="525" y="940" class="tag">C1515</text>
-  <text x="735" y="940" class="tag">M1821</text>
-  <text x="960" y="940" class="tag">C1515</text>
+  <text x="525" y="940" class="tag">C1815</text>
+  <text x="735" y="940" class="tag">M1827</text>
+  <text x="960" y="940" class="tag">C1815</text>
   <text x="595" y="506" class="tag">M0921</text>
   <text x="664" y="506" class="tag">M0921</text>
   <text x="874" y="506" class="tag">M0921</text>
@@ -239,13 +239,13 @@
 
   <!-- ============ 上方尺寸链 ============ -->
   <path d="M420 225 H1080" class="dim-line"/>
-  <path d="M416 229 L424 221 M476 229 L484 221 M566 229 L574 221 M626 229 L634 221 M686 229 L694 221 M776 229 L784 221 M836 229 L844 221 M896 229 L904 221 M1016 229 L1024 221 M1076 229 L1084 221" class="dim-tick"/>
-  <text x="450" y="219" class="dim-num">1000</text>
-  <text x="525" y="219" class="dim-num">1500</text>
-  <text x="600" y="219" class="dim-num">1000</text>
-  <text x="660" y="219" class="dim-num">1000</text>
-  <text x="735" y="219" class="dim-num">1500</text>
-  <text x="810" y="219" class="dim-num">1000</text>
+  <path d="M416 229 L424 221 M467 229 L475 221 M575 229 L583 221 M626 229 L634 221 M677 229 L685 221 M785 229 L793 221 M836 229 L844 221 M896 229 L904 221 M1016 229 L1024 221 M1076 229 L1084 221" class="dim-tick"/>
+  <text x="445" y="219" class="dim-num">850</text>
+  <text x="525" y="219" class="dim-num">1800</text>
+  <text x="605" y="219" class="dim-num">850</text>
+  <text x="655" y="219" class="dim-num">850</text>
+  <text x="735" y="219" class="dim-num">1800</text>
+  <text x="815" y="219" class="dim-num">850</text>
   <text x="870" y="219" class="dim-num">1000</text>
   <text x="960" y="219" class="dim-num">2000</text>
   <text x="1050" y="219" class="dim-num">1000</text>
@@ -262,16 +262,16 @@
 
   <!-- ============ 下方尺寸链 ============ -->
   <path d="M420 959 H1080" class="dim-line"/>
-  <path d="M416 963 L424 955 M476 963 L484 955 M566 963 L574 955 M626 963 L634 955 M677 963 L685 955 M785 963 L793 955 M836 963 L844 955 M911 963 L919 955 M1001 963 L1009 955 M1076 963 L1084 955" class="dim-tick"/>
-  <text x="450" y="953" class="dim-num">1000</text>
-  <text x="525" y="953" class="dim-num">1500</text>
-  <text x="600" y="953" class="dim-num">1000</text>
+  <path d="M416 963 L424 955 M467 963 L475 955 M575 963 L583 955 M626 963 L634 955 M677 963 L685 955 M785 963 L793 955 M836 963 L844 955 M902 963 L910 955 M1010 963 L1018 955 M1076 963 L1084 955" class="dim-tick"/>
+  <text x="445" y="953" class="dim-num">850</text>
+  <text x="525" y="953" class="dim-num">1800</text>
+  <text x="605" y="953" class="dim-num">850</text>
   <text x="655" y="953" class="dim-num">850</text>
   <text x="735" y="953" class="dim-num">1800</text>
   <text x="814" y="953" class="dim-num">850</text>
-  <text x="877" y="953" class="dim-num">1250</text>
-  <text x="960" y="953" class="dim-num">1500</text>
-  <text x="1042" y="953" class="dim-num">1250</text>
+  <text x="871" y="953" class="dim-num">1100</text>
+  <text x="960" y="953" class="dim-num">1800</text>
+  <text x="1049" y="953" class="dim-num">1100</text>
 
   <path d="M420 999 H1080" class="dim-line"/>
   <path d="M416 1003 L424 995 M626 1003 L634 995 M836 1003 L844 995 M1076 1003 L1084 995" class="dim-tick"/>
@@ -285,16 +285,16 @@
 
   <!-- ============ 左侧尺寸链 ============ -->
   <path d="M385 260 V924" class="dim-line"/>
-  <path d="M381 264 L389 256 M381 346 L389 338 M381 436 L389 428 M381 518 L389 510 M381 569 L389 561 M381 623 L389 615 M381 674 L389 666 M381 756 L389 748 M381 846 L389 838 M381 928 L389 920" class="dim-tick"/>
-  <text x="379" y="301" class="dim-num" transform="rotate(-90 379 301)">1367</text>
-  <text x="379" y="387" class="dim-num" transform="rotate(-90 379 387)">1500</text>
-  <text x="379" y="473" class="dim-num" transform="rotate(-90 379 473)">1367</text>
+  <path d="M381 264 L389 256 M381 337 L389 329 M381 445 L389 437 M381 518 L389 510 M381 569 L389 561 M381 623 L389 615 M381 674 L389 666 M381 747 L389 739 M381 855 L389 847 M381 928 L389 920" class="dim-tick"/>
+  <text x="379" y="296" class="dim-num" transform="rotate(-90 379 296)">1217</text>
+  <text x="379" y="387" class="dim-num" transform="rotate(-90 379 387)">1800</text>
+  <text x="379" y="478" class="dim-num" transform="rotate(-90 379 478)">1217</text>
   <text x="379" y="541" class="dim-num" transform="rotate(-90 379 541)">850</text>
   <text x="379" y="592" class="dim-num" transform="rotate(-90 379 592)">900</text>
   <text x="379" y="645" class="dim-num" transform="rotate(-90 379 645)">850</text>
-  <text x="379" y="711" class="dim-num" transform="rotate(-90 379 711)">1367</text>
-  <text x="379" y="797" class="dim-num" transform="rotate(-90 379 797)">1500</text>
-  <text x="379" y="883" class="dim-num" transform="rotate(-90 379 883)">1367</text>
+  <text x="379" y="706" class="dim-num" transform="rotate(-90 379 706)">1217</text>
+  <text x="379" y="797" class="dim-num" transform="rotate(-90 379 797)">1800</text>
+  <text x="379" y="888" class="dim-num" transform="rotate(-90 379 888)">1217</text>
 
   <path d="M345 260 V924" class="dim-line"/>
   <path d="M341 264 L349 256 M341 518 L349 510 M341 674 L349 666 M341 928 L349 920" class="dim-tick"/>
@@ -308,16 +308,16 @@
 
   <!-- ============ 右侧尺寸链 ============ -->
   <path d="M1115 260 V924" class="dim-line"/>
-  <path d="M1111 264 L1119 256 M1111 346 L1119 338 M1111 436 L1119 428 M1111 518 L1119 510 M1111 542 L1119 534 M1111 682 L1119 674 M1111 706 L1119 698 M1111 772 L1119 764 M1111 862 L1119 854 M1111 928 L1119 920" class="dim-tick"/>
-  <text x="1121" y="301" class="dim-num" transform="rotate(-90 1121 301)">1367</text>
-  <text x="1121" y="387" class="dim-num" transform="rotate(-90 1121 387)">1500</text>
-  <text x="1121" y="473" class="dim-num" transform="rotate(-90 1121 473)">1367</text>
+  <path d="M1111 264 L1119 256 M1111 337 L1119 329 M1111 445 L1119 437 M1111 518 L1119 510 M1111 542 L1119 534 M1111 682 L1119 674 M1111 706 L1119 698 M1111 763 L1119 755 M1111 871 L1119 863 M1111 928 L1119 920" class="dim-tick"/>
+  <text x="1121" y="296" class="dim-num" transform="rotate(-90 1121 296)">1217</text>
+  <text x="1121" y="387" class="dim-num" transform="rotate(-90 1121 387)">1800</text>
+  <text x="1121" y="478" class="dim-num" transform="rotate(-90 1121 478)">1217</text>
   <text x="1121" y="526" class="dim-num" transform="rotate(-90 1121 526)">400</text>
   <text x="1121" y="608" class="dim-num" transform="rotate(-90 1121 608)">2333</text>
   <text x="1121" y="690" class="dim-num" transform="rotate(-90 1121 690)">400</text>
-  <text x="1121" y="737" class="dim-num" transform="rotate(-90 1121 737)">1100</text>
-  <text x="1121" y="813" class="dim-num" transform="rotate(-90 1121 813)">1500</text>
-  <text x="1121" y="891" class="dim-num" transform="rotate(-90 1121 891)">1100</text>
+  <text x="1121" y="732" class="dim-num" transform="rotate(-90 1121 732)">950</text>
+  <text x="1121" y="813" class="dim-num" transform="rotate(-90 1121 813)">1800</text>
+  <text x="1121" y="896" class="dim-num" transform="rotate(-90 1121 896)">950</text>
 
   <path d="M1155 260 V924" class="dim-line"/>
   <path d="M1151 264 L1159 256 M1151 518 L1159 510 M1151 706 L1159 698 M1151 928 L1159 920" class="dim-tick"/>
@@ -341,12 +341,12 @@
     <text x="0" y="26" class="note">1. 门洞尺寸</text>
     <text x="0" y="44" class="note">　 卧室与厨房 M0921（900×2100）</text>
     <text x="0" y="62" class="note">　 卫生间 M0821（800×2100）</text>
-    <text x="0" y="80" class="note">　 正门 M1821（1800×2100 双开）</text>
+    <text x="0" y="80" class="note">　 正门 M1827（1800×2700 双开）</text>
     <text x="0" y="106" class="note">2. 除正门外门垛统一 120</text>
     <text x="0" y="124" class="note">　 门垛与全图尺寸为轴线分格值</text>
     <text x="0" y="142" class="note">　 未扣墙厚，收边由施工图确定</text>
     <text x="0" y="168" class="note">3. 外窗每房同一面墙只设一扇</text>
-    <text x="0" y="186" class="note">　 居所在墙段中部</text>
+    <text x="0" y="186" class="note">　 居所在墙段中部，均为 C1815</text>
     <text x="0" y="204" class="note">　 C2325 为客餐厅北墙落地窗</text>
     <text x="0" y="230" class="note">4. 卫生间按南北向干湿分离</text>
     <text x="0" y="248" class="note">　 南 1.1m 湿区：花洒东墙、蹲便西端</text>
