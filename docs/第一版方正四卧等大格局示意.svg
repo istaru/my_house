@@ -61,6 +61,11 @@
 
   <!-- 卫生间干湿分离：南侧 1.1m 湿区，北侧 1.26m 干区，玻璃隔断沿东西向立，靠门端留 0.93m 过人口 -->
   <path d="M286 384 V484" class="glass"/>
+  <rect x="235" y="392" width="36" height="48" rx="10" fill="#ffffff" stroke="#8fa3b8" stroke-width="2"/>
+  <ellipse cx="253" cy="416" rx="9" ry="15" fill="#eef4f8" stroke="#8fa3b8" stroke-width="1.5"/>
+  <path d="M253 538 V521" stroke="#2b7fae" stroke-width="2.5"/>
+  <circle cx="253" cy="512" r="9" fill="#ffffff" stroke="#2b7fae" stroke-width="2.5"/>
+  <path d="M247 512 H259 M253 506 V518" stroke="#2b7fae" stroke-width="1.5"/>
 
   <!-- 短廊三门：卧室 3、卧室 1、卫生间，均向房间内开 -->
   <path d="M368.8 384 H422.8" stroke="#e8f0fe" stroke-width="12"/>
@@ -164,10 +169,13 @@
   <text x="760" y="267" class="room-note">4.0×4.23＝16.9㎡</text>
   <text x="760" y="290" class="room-note">柴火灶｜水槽｜冰箱｜操作台｜储柴带</text>
 
-  <text x="248" y="430" class="furni-label" transform="rotate(-90 248 430)">湿区 1.1m</text>
-  <text x="340" y="430" class="furni-label" transform="rotate(-90 340 430)">干区 1.26m</text>
-  <text x="290.8" y="490" class="room-title">卫生间</text>
-  <text x="290.8" y="514" class="room-note">2.36×2.6＝6.1㎡</text>
+  <text x="253" y="456" class="furni-label">蹲便</text>
+  <text x="232" y="492" class="furni-label" transform="rotate(-90 232 492)">湿区 1.1m</text>
+  <text x="253" y="534" class="furni-label">花洒</text>
+  <text x="352" y="420" class="furni-label" transform="rotate(-90 352 420)">干区 1.26m</text>
+  <text x="322" y="462" class="room-title">卫生间</text>
+  <text x="322" y="486" class="room-note">2.36×2.6</text>
+  <text x="322" y="506" class="room-note">6.1㎡</text>
   <text x="395.8" y="462" class="room-note" transform="rotate(-90 395.8 462)">开放短廊 1.14m｜同堂屋做法</text>
 
   <text x="325" y="700" class="room-title">卧室 1</text>
