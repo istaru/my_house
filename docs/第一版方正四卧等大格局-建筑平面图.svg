@@ -1,0 +1,361 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1350" viewBox="0 0 1600 1350">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #172033; }
+      .frame { fill: none; stroke: #172033; stroke-width: 2.5; }
+      .frame-in { fill: none; stroke: #172033; stroke-width: 1; }
+      .sheet-title { font-size: 22px; font-weight: 700; fill: #c2185b; }
+      .sheet-sub { font-size: 13px; fill: #5b6475; }
+      .plan-name { font-size: 26px; font-weight: 700; }
+      .area-note { font-size: 13px; fill: #c2185b; }
+      .wall { stroke: #172033; stroke-width: 10; fill: none; stroke-linejoin: round; }
+      .partition { stroke: #384152; stroke-width: 5; fill: none; }
+      .soft { stroke: #8b93a4; stroke-width: 3; stroke-dasharray: 10 8; fill: none; }
+      .glass { stroke: #4d9fd0; stroke-width: 5; stroke-linecap: round; fill: none; }
+      .furni { fill: #d8b68b; opacity: 0.85; }
+      .window { stroke: #2d9cdb; stroke-width: 9; stroke-linecap: round; }
+      .door { stroke: #e15f41; stroke-width: 5; fill: none; }
+      .axis-line { stroke: #d94f4f; stroke-width: 1; stroke-dasharray: 14 4 3 4; fill: none; }
+      .axis-circle { fill: #ffffff; stroke: #172033; stroke-width: 1.5; }
+      .axis-num { font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .dim-line { stroke: #172033; stroke-width: 1; fill: none; }
+      .dim-tick { stroke: #172033; stroke-width: 1.4; fill: none; }
+      .dim-num { font-size: 12px; text-anchor: middle; fill: #172033; }
+      .tag { font-size: 11px; fill: #c2185b; text-anchor: middle;
+        paint-order: stroke; stroke: #ffffff; stroke-width: 3px; stroke-linejoin: round; }
+      .room-name { font-size: 19px; font-weight: 700; text-anchor: middle; fill: #c2185b;
+        paint-order: stroke; stroke: #ffffff; stroke-width: 4px; stroke-linejoin: round; }
+      .room-sub { font-size: 12px; text-anchor: middle; fill: #4b5565;
+        paint-order: stroke; stroke: #ffffff; stroke-width: 3.5px; stroke-linejoin: round; }
+      .furni-label { font-size: 11px; fill: #6b5a42; text-anchor: middle; }
+      .lvl { font-size: 13px; text-anchor: middle; }
+      .note { font-size: 12px; fill: #465162; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1350" fill="#ffffff"/>
+
+  <!-- 图框 -->
+  <rect x="40" y="40" width="1520" height="1270" class="frame"/>
+  <rect x="55" y="55" width="1490" height="1240" class="frame-in"/>
+
+  <text x="90" y="100" class="sheet-title">四卧等大方案｜业主自用平面布局建议</text>
+  <text x="90" y="122" class="sheet-sub">概念方案图，非施工图｜尺寸单位：毫米</text>
+
+  <!-- ============ 轴线（点划线，延伸出平面） ============ -->
+  <path d="M420 240 V128 M630 240 V128 M840 240 V128 M1080 240 V128" class="axis-line"/>
+  <path d="M420 944 V1058 M630 944 V1058 M840 944 V1058 M1080 944 V1058" class="axis-line"/>
+  <path d="M400 260 H283 M400 514 H283 M400 670 H283 M400 924 H283" class="axis-line"/>
+  <path d="M1100 260 H1217 M1100 514 H1217 M1100 702 H1217 M1100 924 H1217" class="axis-line"/>
+
+  <!-- ============ 房间底色 ============ -->
+  <rect x="420" y="260" width="210" height="254" fill="#e8f0fe"/>
+  <rect x="630" y="260" width="210" height="254" fill="#e8f0fe"/>
+  <rect x="840" y="260" width="240" height="254" fill="#ffe6d9"/>
+
+  <rect x="420" y="514" width="66" height="156" fill="#c3e3f5"/>
+  <rect x="486" y="514" width="75.6" height="156" fill="#eef7f6"/>
+  <rect x="561.6" y="514" width="68.4" height="156" fill="#f1f3f6"/>
+  <rect x="420" y="670" width="210" height="254" fill="#e8f0fe"/>
+
+  <rect x="630" y="514" width="210" height="410" fill="#f4eadc"/>
+  <rect x="840" y="514" width="240" height="188" fill="#ffe9c7"/>
+  <rect x="840" y="702" width="240" height="222" fill="#e8f0fe"/>
+
+  <!-- ============ 墙体 ============ -->
+  <rect x="420" y="260" width="660" height="664" class="wall"/>
+  <path d="M420 514 H568.8 M622.8 514 H637.2 M691.2 514 H847.2 M901.2 514 H1080" class="partition"/>
+  <path d="M630 260 V514 M840 260 V514" class="partition"/>
+  <path d="M561.6 514 V614.8 M561.6 662.8 V670" class="partition"/>
+  <path d="M420 670 H568.8 M622.8 670 H630" class="partition"/>
+  <path d="M630 670 V924" class="partition"/>
+  <path d="M840 702 V924" class="partition"/>
+  <path d="M840 702 H847.2 M901.2 702 H1080" class="partition"/>
+  <path d="M840 514 V702" class="soft"/>
+
+  <!-- 卫生间干湿分离 -->
+  <path d="M486 514 V614" class="glass"/>
+  <rect x="435" y="522" width="36" height="48" rx="10" fill="#ffffff" stroke="#8fa3b8" stroke-width="2"/>
+  <ellipse cx="453" cy="546" rx="9" ry="15" fill="#eef4f8" stroke="#8fa3b8" stroke-width="1.5"/>
+  <path d="M453 668 V651" stroke="#2b7fae" stroke-width="2.5"/>
+  <circle cx="453" cy="642" r="9" fill="#ffffff" stroke="#2b7fae" stroke-width="2.5"/>
+  <path d="M447 642 H459 M453 636 V648" stroke="#2b7fae" stroke-width="1.5"/>
+
+  <!-- ============ 门 ============ -->
+  <path d="M568.8 514 H622.8" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M622.8 514 V460 A54 54 0 0 0 568.8 514" class="door"/>
+  <path d="M561.6 614.8 V662.8" stroke="#eef7f6" stroke-width="12"/>
+  <path d="M561.6 662.8 H513.6 A48 48 0 0 1 561.6 614.8" class="door"/>
+  <path d="M568.8 670 H622.8" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M622.8 670 V724 A54 54 0 0 1 568.8 670" class="door"/>
+  <path d="M637.2 514 H691.2" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M637.2 514 V460 A54 54 0 0 1 691.2 514" class="door"/>
+  <path d="M847.2 514 H901.2" stroke="#ffe6d9" stroke-width="12"/>
+  <path d="M847.2 514 V460 A54 54 0 0 1 901.2 514" class="door"/>
+  <path d="M847.2 702 H901.2" stroke="#e8f0fe" stroke-width="12"/>
+  <path d="M847.2 702 V756 A54 54 0 0 0 901.2 702" class="door"/>
+  <path d="M681 924 H789" stroke="#ffffff" stroke-width="14"/>
+  <path d="M681 924 V870 A54 54 0 0 1 735 924" class="door"/>
+  <path d="M789 924 V870 A54 54 0 0 0 735 924" class="door"/>
+  <path d="M1080 452.8 V506.8" stroke="#ffffff" stroke-width="14"/>
+  <path d="M1080 506.8 H1026 A54 54 0 0 1 1080 452.8" class="door"/>
+
+  <!-- ============ 外窗 ============ -->
+  <path d="M480 260 H570 M690 260 H780 M900 260 H1020" class="window"/>
+  <path d="M420 342 V432 M420 565 V619 M420 752 V842" class="window"/>
+  <path d="M1080 342 V432 M1080 538 V678 M1080 768 V858" class="window"/>
+  <path d="M480 924 H570 M915 924 H1005" class="window"/>
+
+  <!-- ============ 门窗编号 ============ -->
+  <text x="525" y="250" class="tag">C1515</text>
+  <text x="735" y="250" class="tag">C1515</text>
+  <text x="960" y="250" class="tag">C2015</text>
+  <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1515</text>
+  <text x="408" y="592" class="tag" transform="rotate(-90 408 592)">C0909</text>
+  <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1515</text>
+  <text x="1092" y="387" class="tag" transform="rotate(-90 1092 387)">C1515</text>
+  <text x="1092" y="608" class="tag" transform="rotate(-90 1092 608)">C2325</text>
+  <text x="1092" y="813" class="tag" transform="rotate(-90 1092 813)">C1515</text>
+  <text x="1092" y="480" class="tag" transform="rotate(-90 1092 480)">M0921</text>
+  <text x="525" y="940" class="tag">C1515</text>
+  <text x="735" y="940" class="tag">M1821</text>
+  <text x="960" y="940" class="tag">C1515</text>
+  <text x="595" y="506" class="tag">M0921</text>
+  <text x="664" y="506" class="tag">M0921</text>
+  <text x="874" y="506" class="tag">M0921</text>
+  <text x="595" y="662" class="tag">M0921</text>
+  <text x="874" y="694" class="tag">M0921</text>
+  <text x="551" y="638" class="tag" transform="rotate(-90 551 638)">M0821</text>
+
+  <!-- ============ 家具 ============ -->
+  <rect x="465" y="670" width="90" height="120" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="465" y="670" width="90" height="10" rx="3" class="furni"/>
+  <rect x="472" y="684" width="34" height="16" rx="4" fill="#e8dcc8"/>
+  <rect x="514" y="684" width="34" height="16" rx="4" fill="#e8dcc8"/>
+
+  <rect x="915" y="702" width="90" height="120" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="915" y="702" width="90" height="10" rx="3" class="furni"/>
+  <rect x="922" y="716" width="34" height="16" rx="4" fill="#e8dcc8"/>
+  <rect x="964" y="716" width="34" height="16" rx="4" fill="#e8dcc8"/>
+
+  <rect x="510" y="290" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="620" y="290" width="10" height="90" rx="3" class="furni"/>
+  <rect x="600" y="297" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="600" y="339" width="16" height="34" rx="4" fill="#e8dcc8"/>
+
+  <rect x="720" y="290" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="830" y="290" width="10" height="90" rx="3" class="furni"/>
+  <rect x="810" y="297" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="810" y="339" width="16" height="34" rx="4" fill="#e8dcc8"/>
+
+  <rect x="594" y="730" width="36" height="186" rx="3" class="furni"/>
+  <rect x="600" y="736" width="24" height="174" rx="2" fill="#f6ece0"/>
+  <text x="612" y="823" class="furni-label" transform="rotate(-90 612 823)">整墙衣柜 3.1m</text>
+
+  <rect x="840" y="762" width="36" height="154" rx="3" class="furni"/>
+  <rect x="846" y="768" width="24" height="142" rx="2" fill="#f6ece0"/>
+  <text x="858" y="839" class="furni-label" transform="rotate(-90 858 839)">衣柜 2.6m</text>
+
+  <rect x="426" y="478" width="136" height="36" rx="3" class="furni"/>
+  <rect x="433" y="484" width="122" height="24" rx="2" fill="#f6ece0"/>
+  <text x="494" y="500" class="furni-label">衣柜 2.3m</text>
+
+  <rect x="700" y="478" width="134" height="36" rx="3" class="furni"/>
+  <rect x="707" y="484" width="120" height="24" rx="2" fill="#f6ece0"/>
+  <text x="767" y="500" class="furni-label">衣柜 2.2m</text>
+
+  <rect x="634" y="676" width="36" height="240" rx="3" class="furni"/>
+  <rect x="640" y="682" width="24" height="228" rx="2" fill="#f6ece0"/>
+  <text x="652" y="796" class="furni-label" transform="rotate(-90 652 796)">通长柜 4.23m</text>
+
+  <rect x="915" y="666" width="90" height="36" rx="3" class="furni"/>
+  <rect x="921" y="672" width="78" height="24" rx="2" fill="#f6ece0"/>
+  <text x="960" y="688" class="furni-label">电视柜 1.5m</text>
+
+  <rect x="915" y="563" width="90" height="54" rx="6" class="furni"/>
+  <text x="960" y="594" class="furni-label">六人餐桌</text>
+  <rect x="928" y="545" width="20" height="16" rx="3" fill="#c9a877"/>
+  <rect x="972" y="545" width="20" height="16" rx="3" fill="#c9a877"/>
+  <rect x="928" y="620" width="20" height="16" rx="3" fill="#c9a877"/>
+  <rect x="972" y="620" width="20" height="16" rx="3" fill="#c9a877"/>
+  <rect x="895" y="580" width="16" height="20" rx="3" fill="#c9a877"/>
+  <rect x="1009" y="580" width="16" height="20" rx="3" fill="#c9a877"/>
+
+  <!-- ============ 房间名称 ============ -->
+  <text x="525" y="415" class="room-name">卧室 3</text>
+  <text x="525" y="438" class="room-sub">3.5×4.23＝14.8㎡</text>
+
+  <text x="735" y="415" class="room-name">卧室 4</text>
+  <text x="735" y="438" class="room-sub">3.5×4.23＝14.8㎡</text>
+
+  <text x="960" y="380" class="room-name">柴火厨房</text>
+  <text x="960" y="403" class="room-sub">4.0×4.23＝16.9㎡</text>
+  <text x="960" y="424" class="room-sub">柴火灶｜水槽｜冰箱｜操作台｜储柴带</text>
+
+  <text x="453" y="586" class="furni-label">蹲便</text>
+  <text x="432" y="622" class="furni-label" transform="rotate(-90 432 622)">湿区 1.1m</text>
+  <text x="453" y="664" class="furni-label">花洒</text>
+  <text x="552" y="550" class="furni-label" transform="rotate(-90 552 550)">干区 1.26m</text>
+  <text x="522" y="592" class="room-name">卫生间</text>
+  <text x="522" y="614" class="room-sub">2.36×2.6</text>
+  <text x="522" y="633" class="room-sub">6.1㎡</text>
+  <text x="595.8" y="592" class="room-sub" transform="rotate(-90 595.8 592)">开放短廊 1.14m</text>
+
+  <text x="525" y="830" class="room-name">卧室 1</text>
+  <text x="525" y="853" class="room-sub">3.5×4.23＝14.8㎡</text>
+
+  <text x="740" y="690" class="room-name">堂 屋</text>
+  <text x="740" y="713" class="room-sub">3.5×6.83＝23.9㎡</text>
+  <text x="740" y="734" class="room-sub">一次做通｜中间无隔断</text>
+
+  <text x="960" y="534" class="room-name">客餐一体厅</text>
+  <text x="960" y="556" class="room-sub">4.0×3.13＝12.5㎡</text>
+
+  <text x="960" y="862" class="room-name">卧室 2</text>
+  <text x="960" y="885" class="room-sub">4.0×3.70＝14.8㎡</text>
+
+  <!-- ============ 标高 ============ -->
+  <path d="M740 764 l-9,-13 h18 z" fill="none" stroke="#172033" stroke-width="1.4"/>
+  <text x="740" y="782" class="lvl">±0.000</text>
+
+  <!-- ============ 轴号 ============ -->
+  <circle cx="420" cy="110" r="15" class="axis-circle"/><text x="420" y="116" class="axis-num">1</text>
+  <circle cx="630" cy="110" r="15" class="axis-circle"/><text x="630" y="116" class="axis-num">2</text>
+  <circle cx="840" cy="110" r="15" class="axis-circle"/><text x="840" y="116" class="axis-num">3</text>
+  <circle cx="1080" cy="110" r="15" class="axis-circle"/><text x="1080" y="116" class="axis-num">4</text>
+  <circle cx="420" cy="1075" r="15" class="axis-circle"/><text x="420" y="1081" class="axis-num">1</text>
+  <circle cx="630" cy="1075" r="15" class="axis-circle"/><text x="630" y="1081" class="axis-num">2</text>
+  <circle cx="840" cy="1075" r="15" class="axis-circle"/><text x="840" y="1081" class="axis-num">3</text>
+  <circle cx="1080" cy="1075" r="15" class="axis-circle"/><text x="1080" y="1081" class="axis-num">4</text>
+
+  <circle cx="265" cy="260" r="15" class="axis-circle"/><text x="265" y="266" class="axis-num">A</text>
+  <circle cx="265" cy="514" r="15" class="axis-circle"/><text x="265" y="520" class="axis-num">B</text>
+  <circle cx="265" cy="670" r="15" class="axis-circle"/><text x="265" y="676" class="axis-num">C</text>
+  <circle cx="265" cy="924" r="15" class="axis-circle"/><text x="265" y="930" class="axis-num">E</text>
+  <circle cx="1235" cy="260" r="15" class="axis-circle"/><text x="1235" y="266" class="axis-num">A</text>
+  <circle cx="1235" cy="514" r="15" class="axis-circle"/><text x="1235" y="520" class="axis-num">B</text>
+  <circle cx="1235" cy="702" r="15" class="axis-circle"/><text x="1235" y="708" class="axis-num">D</text>
+  <circle cx="1235" cy="924" r="15" class="axis-circle"/><text x="1235" y="930" class="axis-num">E</text>
+
+  <!-- ============ 上方尺寸链 ============ -->
+  <path d="M420 225 H1080" class="dim-line"/>
+  <path d="M416 229 L424 221 M476 229 L484 221 M566 229 L574 221 M626 229 L634 221 M686 229 L694 221 M776 229 L784 221 M836 229 L844 221 M896 229 L904 221 M1016 229 L1024 221 M1076 229 L1084 221" class="dim-tick"/>
+  <text x="450" y="219" class="dim-num">1000</text>
+  <text x="525" y="219" class="dim-num">1500</text>
+  <text x="600" y="219" class="dim-num">1000</text>
+  <text x="660" y="219" class="dim-num">1000</text>
+  <text x="735" y="219" class="dim-num">1500</text>
+  <text x="810" y="219" class="dim-num">1000</text>
+  <text x="870" y="219" class="dim-num">1000</text>
+  <text x="960" y="219" class="dim-num">2000</text>
+  <text x="1050" y="219" class="dim-num">1000</text>
+
+  <path d="M420 185 H1080" class="dim-line"/>
+  <path d="M416 189 L424 181 M626 189 L634 181 M836 189 L844 181 M1076 189 L1084 181" class="dim-tick"/>
+  <text x="525" y="179" class="dim-num">3500</text>
+  <text x="735" y="179" class="dim-num">3500</text>
+  <text x="960" y="179" class="dim-num">4000</text>
+
+  <path d="M420 145 H1080" class="dim-line"/>
+  <path d="M416 149 L424 141 M1076 149 L1084 141" class="dim-tick"/>
+  <text x="750" y="139" class="dim-num">11000</text>
+
+  <!-- ============ 下方尺寸链 ============ -->
+  <path d="M420 959 H1080" class="dim-line"/>
+  <path d="M416 963 L424 955 M476 963 L484 955 M566 963 L574 955 M626 963 L634 955 M677 963 L685 955 M785 963 L793 955 M836 963 L844 955 M911 963 L919 955 M1001 963 L1009 955 M1076 963 L1084 955" class="dim-tick"/>
+  <text x="450" y="953" class="dim-num">1000</text>
+  <text x="525" y="953" class="dim-num">1500</text>
+  <text x="600" y="953" class="dim-num">1000</text>
+  <text x="655" y="953" class="dim-num">850</text>
+  <text x="735" y="953" class="dim-num">1800</text>
+  <text x="814" y="953" class="dim-num">850</text>
+  <text x="877" y="953" class="dim-num">1250</text>
+  <text x="960" y="953" class="dim-num">1500</text>
+  <text x="1042" y="953" class="dim-num">1250</text>
+
+  <path d="M420 999 H1080" class="dim-line"/>
+  <path d="M416 1003 L424 995 M626 1003 L634 995 M836 1003 L844 995 M1076 1003 L1084 995" class="dim-tick"/>
+  <text x="525" y="993" class="dim-num">3500</text>
+  <text x="735" y="993" class="dim-num">3500</text>
+  <text x="960" y="993" class="dim-num">4000</text>
+
+  <path d="M420 1039 H1080" class="dim-line"/>
+  <path d="M416 1043 L424 1035 M1076 1043 L1084 1035" class="dim-tick"/>
+  <text x="750" y="1033" class="dim-num">11000</text>
+
+  <!-- ============ 左侧尺寸链 ============ -->
+  <path d="M385 260 V924" class="dim-line"/>
+  <path d="M381 264 L389 256 M381 346 L389 338 M381 436 L389 428 M381 518 L389 510 M381 569 L389 561 M381 623 L389 615 M381 674 L389 666 M381 756 L389 748 M381 846 L389 838 M381 928 L389 920" class="dim-tick"/>
+  <text x="379" y="301" class="dim-num" transform="rotate(-90 379 301)">1367</text>
+  <text x="379" y="387" class="dim-num" transform="rotate(-90 379 387)">1500</text>
+  <text x="379" y="473" class="dim-num" transform="rotate(-90 379 473)">1367</text>
+  <text x="379" y="541" class="dim-num" transform="rotate(-90 379 541)">850</text>
+  <text x="379" y="592" class="dim-num" transform="rotate(-90 379 592)">900</text>
+  <text x="379" y="645" class="dim-num" transform="rotate(-90 379 645)">850</text>
+  <text x="379" y="711" class="dim-num" transform="rotate(-90 379 711)">1367</text>
+  <text x="379" y="797" class="dim-num" transform="rotate(-90 379 797)">1500</text>
+  <text x="379" y="883" class="dim-num" transform="rotate(-90 379 883)">1367</text>
+
+  <path d="M345 260 V924" class="dim-line"/>
+  <path d="M341 264 L349 256 M341 518 L349 510 M341 674 L349 666 M341 928 L349 920" class="dim-tick"/>
+  <text x="339" y="387" class="dim-num" transform="rotate(-90 339 387)">4233</text>
+  <text x="339" y="592" class="dim-num" transform="rotate(-90 339 592)">2600</text>
+  <text x="339" y="797" class="dim-num" transform="rotate(-90 339 797)">4233</text>
+
+  <path d="M305 260 V924" class="dim-line"/>
+  <path d="M301 264 L309 256 M301 928 L309 920" class="dim-tick"/>
+  <text x="299" y="592" class="dim-num" transform="rotate(-90 299 592)">11058</text>
+
+  <!-- ============ 右侧尺寸链 ============ -->
+  <path d="M1115 260 V924" class="dim-line"/>
+  <path d="M1111 264 L1119 256 M1111 346 L1119 338 M1111 436 L1119 428 M1111 518 L1119 510 M1111 542 L1119 534 M1111 682 L1119 674 M1111 706 L1119 698 M1111 772 L1119 764 M1111 862 L1119 854 M1111 928 L1119 920" class="dim-tick"/>
+  <text x="1121" y="301" class="dim-num" transform="rotate(-90 1121 301)">1367</text>
+  <text x="1121" y="387" class="dim-num" transform="rotate(-90 1121 387)">1500</text>
+  <text x="1121" y="473" class="dim-num" transform="rotate(-90 1121 473)">1367</text>
+  <text x="1121" y="526" class="dim-num" transform="rotate(-90 1121 526)">400</text>
+  <text x="1121" y="608" class="dim-num" transform="rotate(-90 1121 608)">2333</text>
+  <text x="1121" y="690" class="dim-num" transform="rotate(-90 1121 690)">400</text>
+  <text x="1121" y="737" class="dim-num" transform="rotate(-90 1121 737)">1100</text>
+  <text x="1121" y="813" class="dim-num" transform="rotate(-90 1121 813)">1500</text>
+  <text x="1121" y="891" class="dim-num" transform="rotate(-90 1121 891)">1100</text>
+
+  <path d="M1155 260 V924" class="dim-line"/>
+  <path d="M1151 264 L1159 256 M1151 518 L1159 510 M1151 706 L1159 698 M1151 928 L1159 920" class="dim-tick"/>
+  <text x="1161" y="387" class="dim-num" transform="rotate(-90 1161 387)">4233</text>
+  <text x="1161" y="608" class="dim-num" transform="rotate(-90 1161 608)">3133</text>
+  <text x="1161" y="813" class="dim-num" transform="rotate(-90 1161 813)">3700</text>
+
+  <path d="M1195 260 V924" class="dim-line"/>
+  <path d="M1191 264 L1199 256 M1191 928 L1199 920" class="dim-tick"/>
+  <text x="1201" y="592" class="dim-num" transform="rotate(-90 1201 592)">11058</text>
+
+  <!-- ============ 图名与面积 ============ -->
+  <text x="1010" y="1190" class="plan-name">一层平面图 1:100</text>
+  <path d="M1010 1204 H1290" stroke="#172033" stroke-width="2"/>
+  <text x="1010" y="1230" class="area-note">本层建筑面积：121.64 平方米</text>
+  <text x="1010" y="1252" class="area-note">四间卧室各 14.8 平方米</text>
+
+  <!-- ============ 说明 ============ -->
+  <g transform="translate(90 1130)">
+    <text x="0" y="0" class="note" font-weight="700">说　明</text>
+    <text x="0" y="24" class="note">1. 门洞：卧室与厨房 M0921（900×2100），卫生间 M0821（800×2100），东墙中部正门 M1821（1800×2100 双开）。</text>
+    <text x="0" y="46" class="note">2. 除正门外全屋门垛统一 120；门垛与全图尺寸均为轴线分格值，未扣除墙厚，实际收边由施工图确定。</text>
+    <text x="0" y="68" class="note">3. 外窗每房同一面墙只设一扇，居所在墙段中部；C2325 为客餐一体厅北墙落地窗，是该厅唯一采光面。</text>
+    <text x="0" y="90" class="note">4. 卫生间按南北向干湿分离：南侧 1.1m 湿区（花洒装东墙、蹲便设西端地面），北侧 1.26m 干区（洗手盆、洗衣机）。</text>
+    <text x="0" y="112" class="note">5. 堂屋内部不设任何隔断，地面／吊顶／踢脚一次做通；室内标高 ±0.000，室外地坪 -0.300。</text>
+    <text x="0" y="134" class="note">6. 四间卧室面积完全相同，各 14.8 平方米；卧室 1／3／4 为 3.5×4.23 米，卧室 2 为 4.0×3.70 米。</text>
+  </g>
+
+  <!-- ============ 方位 ============ -->
+  <g transform="translate(880 1195)">
+    <circle cx="0" cy="0" r="52" fill="#ffffff" stroke="#9aa3b2" stroke-width="1.5"/>
+    <path d="M0 30 V-30" stroke="#172033" stroke-width="2"/>
+    <path d="M-30 0 H30" stroke="#172033" stroke-width="2"/>
+    <path d="M0 -30 l-6,10 h12 z" fill="#172033"/>
+    <text x="0" y="-38" class="axis-num" font-size="13">西</text>
+    <text x="0" y="48" class="axis-num" font-size="13">东</text>
+    <text x="-42" y="5" class="axis-num" font-size="13">南</text>
+    <text x="42" y="5" class="axis-num" font-size="13">北</text>
+    <text x="0" y="76" class="note" text-anchor="middle">上西　右北　下东　左南</text>
+  </g>
+</svg>
