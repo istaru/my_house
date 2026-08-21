@@ -99,12 +99,13 @@
   <path d="M1080 506.8 H1026 A54 54 0 0 1 1080 452.8" class="door"/>
 
   <!-- ============ 外窗 ============ -->
-  <path d="M681 260 H789 M906 260 H1014" class="window"/>
+  <path d="M471 260 H579 M681 260 H789 M906 260 H1014" class="window"/>
   <path d="M420 333 V441 M420 565 V619 M420 743 V851" class="window"/>
-  <path d="M1080 333 V441 M1080 538 V678" class="window"/>
+  <path d="M1080 333 V441 M1080 538 V678 M1080 759 V867" class="window"/>
   <path d="M471 924 H579 M906 924 H1014" class="window"/>
 
   <!-- ============ 门窗编号 ============ -->
+  <text x="525" y="250" class="tag">C1815</text>
   <text x="735" y="250" class="tag">C1815</text>
   <text x="960" y="250" class="tag">C1815</text>
   <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1815</text>
@@ -112,6 +113,7 @@
   <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1815</text>
   <text x="1092" y="387" class="tag" transform="rotate(-90 1092 387)">C1815</text>
   <text x="1092" y="608" class="tag" transform="rotate(-90 1092 608)">C2325</text>
+  <text x="1092" y="813" class="tag" transform="rotate(-90 1092 813)">C1815</text>
   <text x="1092" y="480" class="tag" transform="rotate(-90 1092 480)">M0921</text>
   <text x="525" y="940" class="tag">C1815</text>
   <text x="735" y="940" class="tag">M1827</text>
@@ -235,8 +237,10 @@
 
   <!-- ============ 上方尺寸链 ============ -->
   <path d="M420 225 H1080" class="dim-line"/>
-  <path d="M416 229 L424 221 M626 229 L634 221 M677 229 L685 221 M785 229 L793 221 M836 229 L844 221 M902 229 L910 221 M1010 229 L1018 221 M1076 229 L1084 221" class="dim-tick"/>
-  <text x="525" y="219" class="dim-num">3500（西窗暂取消）</text>
+  <path d="M416 229 L424 221 M467 229 L475 221 M575 229 L583 221 M626 229 L634 221 M677 229 L685 221 M785 229 L793 221 M836 229 L844 221 M902 229 L910 221 M1010 229 L1018 221 M1076 229 L1084 221" class="dim-tick"/>
+  <text x="445" y="219" class="dim-num">850</text>
+  <text x="525" y="219" class="dim-num">1800</text>
+  <text x="605" y="219" class="dim-num">850</text>
   <text x="655" y="219" class="dim-num">850</text>
   <text x="735" y="219" class="dim-num">1800</text>
   <text x="815" y="219" class="dim-num">850</text>
@@ -302,14 +306,16 @@
 
   <!-- ============ 右侧尺寸链 ============ -->
   <path d="M1115 260 V924" class="dim-line"/>
-  <path d="M1111 264 L1119 256 M1111 337 L1119 329 M1111 445 L1119 437 M1111 518 L1119 510 M1111 542 L1119 534 M1111 682 L1119 674 M1111 706 L1119 698 M1111 928 L1119 920" class="dim-tick"/>
+  <path d="M1111 264 L1119 256 M1111 337 L1119 329 M1111 445 L1119 437 M1111 518 L1119 510 M1111 542 L1119 534 M1111 682 L1119 674 M1111 706 L1119 698 M1111 763 L1119 755 M1111 871 L1119 863 M1111 928 L1119 920" class="dim-tick"/>
   <text x="1121" y="296" class="dim-num" transform="rotate(-90 1121 296)">1217</text>
   <text x="1121" y="387" class="dim-num" transform="rotate(-90 1121 387)">1800</text>
   <text x="1121" y="478" class="dim-num" transform="rotate(-90 1121 478)">1217</text>
   <text x="1121" y="526" class="dim-num" transform="rotate(-90 1121 526)">400</text>
   <text x="1121" y="608" class="dim-num" transform="rotate(-90 1121 608)">2333</text>
   <text x="1121" y="690" class="dim-num" transform="rotate(-90 1121 690)">400</text>
-  <text x="1121" y="813" class="dim-num" transform="rotate(-90 1121 813)">3700（北窗暂取消）</text>
+  <text x="1121" y="732" class="dim-num" transform="rotate(-90 1121 732)">950</text>
+  <text x="1121" y="813" class="dim-num" transform="rotate(-90 1121 813)">1800</text>
+  <text x="1121" y="896" class="dim-num" transform="rotate(-90 1121 896)">950</text>
 
   <path d="M1155 260 V924" class="dim-line"/>
   <path d="M1151 264 L1159 256 M1151 518 L1159 510 M1151 706 L1159 698 M1151 928 L1159 920" class="dim-tick"/>
@@ -339,20 +345,18 @@
     <text x="0" y="123" class="note">2. 除正门外门垛统一 120</text>
     <text x="0" y="144" class="note">　 门垛与全图尺寸为轴线分格值</text>
     <text x="0" y="165" class="note">　 未扣墙厚，收边由施工图确定</text>
-    <text x="0" y="195" class="note">3. 外窗每房同一面墙最多一扇</text>
+    <text x="0" y="195" class="note">3. 外窗每房同一面墙只设一扇</text>
     <text x="0" y="216" class="note">　 居所在墙段中部，均为 C1815</text>
     <text x="0" y="237" class="note">　 C2325 为客餐厅北墙落地窗</text>
-    <text x="0" y="258" class="note">　 卧室 2 北窗、卧室 3 西窗暂时取消</text>
-    <text x="0" y="279" class="note">　 现为单侧采光，墙上留位可随时加回</text>
-    <text x="0" y="309" class="note">4. 卫生间按南北向干湿分离</text>
-    <text x="0" y="330" class="note">　 南 1.1m 湿区：花洒东墙、蹲便西端</text>
-    <text x="0" y="351" class="note">　 北 1.26m 干区：洗手盆、洗衣机</text>
-    <text x="0" y="381" class="note">5. 堂屋内部不设任何隔断</text>
-    <text x="0" y="402" class="note">　 地面／吊顶／踢脚一次做通</text>
-    <text x="0" y="423" class="note">　 室内 ±0.000，室外地坪 -0.300</text>
-    <text x="0" y="453" class="note">6. 四间卧室面积完全相同，各 14.8㎡</text>
-    <text x="0" y="474" class="note">　 卧室 1／3／4 为 3.5×4.23 米</text>
-    <text x="0" y="495" class="note">　 卧室 2 为 4.0×3.70 米</text>
+    <text x="0" y="267" class="note">4. 卫生间按南北向干湿分离</text>
+    <text x="0" y="288" class="note">　 南 1.1m 湿区：花洒东墙、蹲便西端</text>
+    <text x="0" y="309" class="note">　 北 1.26m 干区：洗手盆、洗衣机</text>
+    <text x="0" y="339" class="note">5. 堂屋内部不设任何隔断</text>
+    <text x="0" y="360" class="note">　 地面／吊顶／踢脚一次做通</text>
+    <text x="0" y="381" class="note">　 室内 ±0.000，室外地坪 -0.300</text>
+    <text x="0" y="411" class="note">6. 四间卧室面积完全相同，各 14.8㎡</text>
+    <text x="0" y="432" class="note">　 卧室 1／3／4 为 3.5×4.23 米</text>
+    <text x="0" y="453" class="note">　 卧室 2 为 4.0×3.70 米</text>
   </g>
 
   <!-- ============ 方位 ============ -->
