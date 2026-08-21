@@ -96,7 +96,7 @@
 
   <!-- 外窗：按对应房间墙段中部布置；每个房间同墙一扇 -->
   <path d="M220 203 V311 M220 435 V489 M220 613 V721" class="window"/>
-  <path d="M271 130 H379 M481 130 H589 M700 130 H820" class="window"/>
+  <path d="M271 130 H379 M481 130 H589 M706 130 H814" class="window"/>
   <path d="M880 203 V311 M880 408 V548 M880 629 V737" class="window"/>
   <path d="M271 794 H379 M706 794 H814" class="window"/>
 

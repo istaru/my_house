@@ -101,7 +101,7 @@
   <path d="M1080 506.8 H1026 A54 54 0 0 1 1080 452.8" class="door"/>
 
   <!-- ============ 外窗 ============ -->
-  <path d="M471 260 H579 M681 260 H789 M900 260 H1020" class="window"/>
+  <path d="M471 260 H579 M681 260 H789 M906 260 H1014" class="window"/>
   <path d="M420 333 V441 M420 565 V619 M420 743 V851" class="window"/>
   <path d="M1080 333 V441 M1080 538 V678 M1080 759 V867" class="window"/>
   <path d="M471 924 H579 M906 924 H1014" class="window"/>
@@ -109,7 +109,7 @@
   <!-- ============ 门窗编号 ============ -->
   <text x="525" y="250" class="tag">C1815</text>
   <text x="735" y="250" class="tag">C1815</text>
-  <text x="960" y="250" class="tag">C2015</text>
+  <text x="960" y="250" class="tag">C1815</text>
   <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1815</text>
   <text x="408" y="592" class="tag" transform="rotate(-90 408 592)">C0915</text>
   <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1815</text>
@@ -239,16 +239,16 @@
 
   <!-- ============ 上方尺寸链 ============ -->
   <path d="M420 225 H1080" class="dim-line"/>
-  <path d="M416 229 L424 221 M467 229 L475 221 M575 229 L583 221 M626 229 L634 221 M677 229 L685 221 M785 229 L793 221 M836 229 L844 221 M896 229 L904 221 M1016 229 L1024 221 M1076 229 L1084 221" class="dim-tick"/>
+  <path d="M416 229 L424 221 M467 229 L475 221 M575 229 L583 221 M626 229 L634 221 M677 229 L685 221 M785 229 L793 221 M836 229 L844 221 M902 229 L910 221 M1010 229 L1018 221 M1076 229 L1084 221" class="dim-tick"/>
   <text x="445" y="219" class="dim-num">850</text>
   <text x="525" y="219" class="dim-num">1800</text>
   <text x="605" y="219" class="dim-num">850</text>
   <text x="655" y="219" class="dim-num">850</text>
   <text x="735" y="219" class="dim-num">1800</text>
   <text x="815" y="219" class="dim-num">850</text>
-  <text x="870" y="219" class="dim-num">1000</text>
-  <text x="960" y="219" class="dim-num">2000</text>
-  <text x="1050" y="219" class="dim-num">1000</text>
+  <text x="871" y="219" class="dim-num">1100</text>
+  <text x="960" y="219" class="dim-num">1800</text>
+  <text x="1047" y="219" class="dim-num">1100</text>
 
   <path d="M420 185 H1080" class="dim-line"/>
   <path d="M416 189 L424 181 M626 189 L634 181 M836 189 L844 181 M1076 189 L1084 181" class="dim-tick"/>
