@@ -138,15 +138,15 @@
   <rect x="922" y="716" width="34" height="16" rx="4" fill="#e8dcc8"/>
   <rect x="964" y="716" width="34" height="16" rx="4" fill="#e8dcc8"/>
 
-  <rect x="510" y="290" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
-  <rect x="620" y="290" width="10" height="90" rx="3" class="furni"/>
-  <rect x="600" y="297" width="16" height="34" rx="4" fill="#e8dcc8"/>
-  <rect x="600" y="339" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="510" y="342" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="620" y="342" width="10" height="90" rx="3" class="furni"/>
+  <rect x="600" y="349" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="600" y="391" width="16" height="34" rx="4" fill="#e8dcc8"/>
 
-  <rect x="720" y="290" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
-  <rect x="830" y="290" width="10" height="90" rx="3" class="furni"/>
-  <rect x="810" y="297" width="16" height="34" rx="4" fill="#e8dcc8"/>
-  <rect x="810" y="339" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="720" y="342" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="830" y="342" width="10" height="90" rx="3" class="furni"/>
+  <rect x="810" y="349" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="810" y="391" width="16" height="34" rx="4" fill="#e8dcc8"/>
 
   <rect x="594" y="730" width="36" height="186" rx="3" class="furni"/>
   <rect x="600" y="736" width="24" height="174" rx="2" fill="#f6ece0"/>
@@ -182,11 +182,11 @@
   <rect x="1009" y="580" width="16" height="20" rx="3" fill="#c9a877"/>
 
   <!-- ============ 房间名称 ============ -->
-  <text x="525" y="415" class="room-name">卧室 3</text>
-  <text x="525" y="438" class="room-sub">3.5×4.23＝14.8㎡</text>
+  <text x="525" y="300" class="room-name">卧室 3</text>
+  <text x="525" y="323" class="room-sub">3.5×4.23＝14.8㎡</text>
 
-  <text x="735" y="415" class="room-name">卧室 4</text>
-  <text x="735" y="438" class="room-sub">3.5×4.23＝14.8㎡</text>
+  <text x="735" y="300" class="room-name">卧室 4</text>
+  <text x="735" y="323" class="room-sub">3.5×4.23＝14.8㎡</text>
 
   <text x="960" y="380" class="room-name">柴火厨房</text>
   <text x="960" y="403" class="room-sub">4.0×4.23＝16.9㎡</text>

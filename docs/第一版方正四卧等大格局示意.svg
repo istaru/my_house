@@ -111,15 +111,15 @@
   <rect x="722" y="586" width="34" height="16" rx="4" fill="#e8dcc8"/>
   <rect x="764" y="586" width="34" height="16" rx="4" fill="#e8dcc8"/>
 
-  <rect x="310" y="160" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
-  <rect x="420" y="160" width="10" height="90" rx="3" class="furni"/>
-  <rect x="400" y="167" width="16" height="34" rx="4" fill="#e8dcc8"/>
-  <rect x="400" y="209" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="310" y="212" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="420" y="212" width="10" height="90" rx="3" class="furni"/>
+  <rect x="400" y="219" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="400" y="261" width="16" height="34" rx="4" fill="#e8dcc8"/>
 
-  <rect x="520" y="160" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
-  <rect x="630" y="160" width="10" height="90" rx="3" class="furni"/>
-  <rect x="610" y="167" width="16" height="34" rx="4" fill="#e8dcc8"/>
-  <rect x="610" y="209" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="520" y="212" width="120" height="90" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
+  <rect x="630" y="212" width="10" height="90" rx="3" class="furni"/>
+  <rect x="610" y="219" width="16" height="34" rx="4" fill="#e8dcc8"/>
+  <rect x="610" y="261" width="16" height="34" rx="4" fill="#e8dcc8"/>
 
   <!-- 六组 0.6m 深长柜：四间衣柜、堂屋通长柜、客餐厅电视柜，均避开门扇开启范围 -->
   <rect x="394" y="600" width="36" height="186" rx="3" class="furni"/>
@@ -157,13 +157,13 @@
   <rect x="809" y="450" width="16" height="20" rx="3" fill="#c9a877"/>
 
   <!-- 房间标签 -->
-  <text x="325" y="285" class="room-title">卧室 3</text>
-  <text x="325" y="311" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="325" y="333" class="room-note">南窗＋西窗｜双面采光</text>
+  <text x="325" y="160" class="room-title">卧室 3</text>
+  <text x="325" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
+  <text x="325" y="208" class="room-note">南窗＋西窗｜双面采光</text>
 
-  <text x="535" y="285" class="room-title">卧室 4</text>
-  <text x="535" y="311" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="535" y="333" class="room-note">西窗</text>
+  <text x="535" y="160" class="room-title">卧室 4</text>
+  <text x="535" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
+  <text x="535" y="208" class="room-note">西窗</text>
 
   <text x="760" y="240" class="room-title">柴火厨房</text>
   <text x="760" y="267" class="room-note">4.0×4.23＝16.9㎡</text>
