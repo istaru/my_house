@@ -70,6 +70,31 @@
       a {
         color: #1769aa;
       }
+
+      .download {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 10;
+        padding: 10px 18px;
+        font: inherit;
+        font-size: 14px;
+        color: #fff;
+        background: #1769aa;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgb(23 32 51 / 22%);
+      }
+
+      .download:hover {
+        background: #145a92;
+      }
+
+      .download:disabled {
+        background: #8b97a6;
+        cursor: default;
+      }
     </style>
   </head>
   <body>
@@ -91,5 +116,79 @@
         <a href="docs/历史-四卧堂屋格局示意.svg">历史图纸</a>
       </p>
     </main>
+    <button class="download" type="button">下载图片</button>
+    <script>
+      (function () {
+        var SVG_URL = 'docs/第一版方正四卧等大格局-建筑平面图.svg';
+        var FILE_NAME = '第一版方正四卧等大格局-建筑平面图.webp';
+        var SCALE = 2;
+        var button = document.querySelector('.download');
+
+        function draw(svgText) {
+          var doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+          var svg = doc.documentElement;
+          var box = svg.getAttribute('viewBox').split(/[\s,]+/).map(Number);
+          var width = box[2] * SCALE;
+          var height = box[3] * SCALE;
+          svg.setAttribute('width', width);
+          svg.setAttribute('height', height);
+
+          var source = new XMLSerializer().serializeToString(svg);
+          var url = URL.createObjectURL(new Blob([source], { type: 'image/svg+xml;charset=utf-8' }));
+          var image = new Image();
+
+          image.onload = function () {
+            var canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, width, height);
+            ctx.drawImage(image, 0, 0, width, height);
+            URL.revokeObjectURL(url);
+
+            canvas.toBlob(function (blob) {
+              if (!blob) return fail();
+              var link = document.createElement('a');
+              link.href = URL.createObjectURL(blob);
+              link.download = FILE_NAME;
+              link.click();
+              URL.revokeObjectURL(link.href);
+              reset();
+            }, 'image/webp', 0.95);
+          };
+
+          image.onerror = function () {
+            URL.revokeObjectURL(url);
+            fail();
+          };
+
+          image.src = url;
+        }
+
+        function reset() {
+          button.disabled = false;
+          button.textContent = '下载图片';
+        }
+
+        function fail() {
+          button.disabled = false;
+          button.textContent = '下载失败，请重试';
+          setTimeout(reset, 2400);
+        }
+
+        button.addEventListener('click', function () {
+          button.disabled = true;
+          button.textContent = '正在生成…';
+          fetch(SVG_URL)
+            .then(function (res) {
+              if (!res.ok) throw new Error(res.status);
+              return res.text();
+            })
+            .then(draw)
+            .catch(fail);
+        });
+      })();
+    </script>
   </body>
 </html>
