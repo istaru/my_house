@@ -4,10 +4,10 @@
       text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill: #172033; }
       .frame { fill: none; stroke: #172033; stroke-width: 2.5; }
       .frame-in { fill: none; stroke: #172033; stroke-width: 1; }
-      .sheet-title { font-size: 20px; font-weight: 700; fill: #c2185b; }
+      .sheet-title { font-size: 22px; font-weight: 700; fill: #c2185b; }
       .sheet-sub { font-size: 13px; fill: #5b6475; }
       .plan-name { font-size: 26px; font-weight: 700; }
-      .area-note { font-size: 13px; fill: #c2185b; }
+      .area-note { font-size: 14px; fill: #c2185b; }
       .wall { stroke: #172033; stroke-width: 10; fill: none; stroke-linejoin: round; }
       .partition { stroke: #384152; stroke-width: 5; fill: none; }
       .soft { stroke: #8b93a4; stroke-width: 3; stroke-dasharray: 10 8; fill: none; }
@@ -29,7 +29,7 @@
         paint-order: stroke; stroke: #ffffff; stroke-width: 3.5px; stroke-linejoin: round; }
       .furni-label { font-size: 11px; fill: #6b5a42; text-anchor: middle; }
       .lvl { font-size: 13px; text-anchor: middle; }
-      .note { font-size: 12px; fill: #465162; }
+      .note { font-size: 14px; fill: #465162; }
     </style>
   </defs>
 
@@ -336,31 +336,31 @@
   <text x="90" y="196" class="area-note">四间卧室各 14.8 平方米</text>
 
   <!-- ============ 说明 ============ -->
-  <g transform="translate(1295 285)">
+  <g transform="translate(1280 285)">
     <text x="0" y="0" class="note" font-weight="700">说　明</text>
-    <text x="0" y="26" class="note">1. 门洞尺寸</text>
-    <text x="0" y="44" class="note">　 卧室与厨房 M0921（900×2100）</text>
-    <text x="0" y="62" class="note">　 卫生间 M0921（900×2100）</text>
-    <text x="0" y="80" class="note">　 正门 M1827（1800×2700 双开）</text>
-    <text x="0" y="106" class="note">2. 除正门外门垛统一 120</text>
-    <text x="0" y="124" class="note">　 门垛与全图尺寸为轴线分格值</text>
-    <text x="0" y="142" class="note">　 未扣墙厚，收边由施工图确定</text>
-    <text x="0" y="168" class="note">3. 外窗每房同一面墙只设一扇</text>
-    <text x="0" y="186" class="note">　 居所在墙段中部，均为 C1815</text>
-    <text x="0" y="204" class="note">　 C2325 为客餐厅北墙落地窗</text>
-    <text x="0" y="230" class="note">4. 卫生间按南北向干湿分离</text>
-    <text x="0" y="248" class="note">　 南 1.1m 湿区：花洒东墙、蹲便西端</text>
-    <text x="0" y="266" class="note">　 北 1.26m 干区：洗手盆、洗衣机</text>
-    <text x="0" y="292" class="note">5. 堂屋内部不设任何隔断</text>
-    <text x="0" y="310" class="note">　 地面／吊顶／踢脚一次做通</text>
-    <text x="0" y="328" class="note">　 室内 ±0.000，室外地坪 -0.300</text>
-    <text x="0" y="354" class="note">6. 四间卧室面积完全相同，各 14.8㎡</text>
-    <text x="0" y="372" class="note">　 卧室 1／3／4 为 3.5×4.23 米</text>
-    <text x="0" y="390" class="note">　 卧室 2 为 4.0×3.70 米</text>
+    <text x="0" y="30" class="note">1. 门洞尺寸</text>
+    <text x="0" y="51" class="note">　 卧室与厨房 M0921（900×2100）</text>
+    <text x="0" y="72" class="note">　 卫生间 M0921（900×2100）</text>
+    <text x="0" y="93" class="note">　 正门 M1827（1800×2700 双开）</text>
+    <text x="0" y="123" class="note">2. 除正门外门垛统一 120</text>
+    <text x="0" y="144" class="note">　 门垛与全图尺寸为轴线分格值</text>
+    <text x="0" y="165" class="note">　 未扣墙厚，收边由施工图确定</text>
+    <text x="0" y="195" class="note">3. 外窗每房同一面墙只设一扇</text>
+    <text x="0" y="216" class="note">　 居所在墙段中部，均为 C1815</text>
+    <text x="0" y="237" class="note">　 C2325 为客餐厅北墙落地窗</text>
+    <text x="0" y="267" class="note">4. 卫生间按南北向干湿分离</text>
+    <text x="0" y="288" class="note">　 南 1.1m 湿区：花洒东墙、蹲便西端</text>
+    <text x="0" y="309" class="note">　 北 1.26m 干区：洗手盆、洗衣机</text>
+    <text x="0" y="339" class="note">5. 堂屋内部不设任何隔断</text>
+    <text x="0" y="360" class="note">　 地面／吊顶／踢脚一次做通</text>
+    <text x="0" y="381" class="note">　 室内 ±0.000，室外地坪 -0.300</text>
+    <text x="0" y="411" class="note">6. 四间卧室面积完全相同，各 14.8㎡</text>
+    <text x="0" y="432" class="note">　 卧室 1／3／4 为 3.5×4.23 米</text>
+    <text x="0" y="453" class="note">　 卧室 2 为 4.0×3.70 米</text>
   </g>
 
   <!-- ============ 方位 ============ -->
-  <g transform="translate(1397 158)">
+  <g transform="translate(1400 158)">
     <circle cx="0" cy="0" r="52" fill="#ffffff" stroke="#9aa3b2" stroke-width="1.5"/>
     <path d="M0 30 V-30" stroke="#172033" stroke-width="2"/>
     <path d="M-30 0 H30" stroke="#172033" stroke-width="2"/>
