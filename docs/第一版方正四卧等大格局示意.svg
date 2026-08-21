@@ -173,7 +173,7 @@
 
   <!-- 客餐一体厅：六人餐桌居中 -->
   <rect x="715" y="433" width="90" height="54" rx="6" class="furni"/>
-  <text x="760" y="464" class="furni-label">六人餐桌</text>
+  <text x="760" y="522" class="furni-label">六人餐桌</text>
   <rect x="728" y="415" width="20" height="16" rx="3" fill="#c9a877"/>
   <rect x="772" y="415" width="20" height="16" rx="3" fill="#c9a877"/>
   <rect x="728" y="490" width="20" height="16" rx="3" fill="#c9a877"/>
@@ -181,42 +181,67 @@
   <rect x="695" y="450" width="16" height="20" rx="3" fill="#c9a877"/>
   <rect x="809" y="450" width="16" height="20" rx="3" fill="#c9a877"/>
 
+  <!-- 办公桌 1800×600：卧室 1／2 贴东墙窗下、卧室 3 贴南墙窗下、卧室 4 贴西墙窗下 -->
+  <rect x="271" y="758" width="108" height="36" rx="3" class="furni"/>
+  <rect x="277" y="764" width="96" height="24" rx="2" fill="#f6ece0"/>
+  <rect x="311" y="725" width="28" height="27" rx="4" fill="#c9a877"/>
+  <text x="325" y="776" class="furni-label">办公桌</text>
+  <text x="325" y="788" class="furni-label">1.8m</text>
+
+  <rect x="706" y="758" width="108" height="36" rx="3" class="furni"/>
+  <rect x="712" y="764" width="96" height="24" rx="2" fill="#f6ece0"/>
+  <rect x="746" y="725" width="28" height="27" rx="4" fill="#c9a877"/>
+  <text x="760" y="776" class="furni-label">办公桌</text>
+  <text x="760" y="788" class="furni-label">1.8m</text>
+
+  <rect x="220" y="203" width="36" height="108" rx="3" class="furni"/>
+  <rect x="226" y="209" width="24" height="96" rx="2" fill="#f6ece0"/>
+  <rect x="260" y="243" width="27" height="28" rx="4" fill="#c9a877"/>
+  <text x="234" y="257" class="furni-label" transform="rotate(-90 234 257)">办公桌</text>
+  <text x="248" y="257" class="furni-label" transform="rotate(-90 248 257)">1.8m</text>
+
+  <rect x="481" y="130" width="108" height="36" rx="3" class="furni"/>
+  <rect x="487" y="136" width="96" height="24" rx="2" fill="#f6ece0"/>
+  <rect x="521" y="170" width="28" height="27" rx="4" fill="#c9a877"/>
+  <text x="535" y="148" class="furni-label">办公桌</text>
+  <text x="535" y="160" class="furni-label">1.8m</text>
+
   <!-- 房间标签 -->
-  <text x="325" y="160" class="room-title">卧室 3</text>
-  <text x="325" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="325" y="208" class="room-note">南窗＋西窗｜双面采光</text>
+  <text x="325" y="243" class="room-title">卧室 3</text>
+  <text x="325" y="269" class="room-note">3.5×4.23＝14.8㎡</text>
+  <text x="325" y="291" class="room-note">南窗＋西窗｜双面采光</text>
 
-  <text x="535" y="160" class="room-title">卧室 4</text>
-  <text x="535" y="186" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="535" y="208" class="room-note">西窗</text>
+  <text x="535" y="243" class="room-title">卧室 4</text>
+  <text x="535" y="269" class="room-note">3.5×4.23＝14.8㎡</text>
+  <text x="535" y="291" class="room-note">西窗</text>
 
-  <text x="760" y="240" class="room-title">柴火厨房</text>
-  <text x="760" y="267" class="room-note">4.0×4.23＝16.9㎡</text>
-  <text x="760" y="290" class="room-note">柴火灶｜水槽｜冰箱｜操作台｜储柴带</text>
+  <text x="760" y="235" class="room-title">柴火厨房</text>
+  <text x="760" y="262" class="room-note">4.0×4.23＝16.9㎡</text>
+  <text x="760" y="285" class="room-note">柴火灶｜水槽｜冰箱｜操作台｜储柴带</text>
 
   <text x="253" y="456" class="furni-label">蹲便</text>
   <text x="232" y="492" class="furni-label" transform="rotate(-90 232 492)">湿区 1.1m</text>
   <text x="253" y="534" class="furni-label">花洒</text>
   <text x="352" y="420" class="furni-label" transform="rotate(-90 352 420)">干区 1.26m</text>
-  <text x="322" y="462" class="room-title">卫生间</text>
-  <text x="322" y="486" class="room-note">2.36×2.6</text>
-  <text x="322" y="506" class="room-note">6.1㎡</text>
+  <text x="291" y="450" class="room-title">卫生间</text>
+  <text x="291" y="474" class="room-note">2.36×2.6</text>
+  <text x="291" y="494" class="room-note">6.1㎡</text>
   <text x="395.8" y="462" class="room-note" transform="rotate(-90 395.8 462)">开放短廊 1.14m｜同堂屋做法</text>
 
-  <text x="325" y="700" class="room-title">卧室 1</text>
-  <text x="325" y="727" class="room-note">3.5×4.23＝14.8㎡</text>
-  <text x="325" y="750" class="room-note">南窗＋东窗</text>
+  <text x="325" y="680" class="room-title">卧室 1</text>
+  <text x="325" y="707" class="room-note">3.5×4.23＝14.8㎡</text>
+  <text x="325" y="730" class="room-note">南窗＋东窗</text>
 
-  <text x="540" y="560" class="room-title">堂 屋</text>
-  <text x="540" y="587" class="room-note">3.5×6.83＝23.9㎡</text>
-  <text x="540" y="610" class="room-note">一次做通｜中间无隔断</text>
+  <text x="535" y="573" class="room-title">堂 屋</text>
+  <text x="535" y="600" class="room-note">3.5×6.83＝23.9㎡</text>
+  <text x="535" y="623" class="room-note">一次做通｜中间无隔断</text>
 
-  <text x="760" y="404" class="room-title">客餐一体厅</text>
-  <text x="760" y="426" class="room-note">4.0×3.13＝12.5㎡</text>
+  <text x="760" y="470" class="room-title">客餐一体厅</text>
+  <text x="760" y="492" class="room-note">4.0×3.13＝12.5㎡</text>
 
-  <text x="760" y="730" class="room-title">卧室 2</text>
-  <text x="760" y="757" class="room-note">4.0×3.70＝14.8㎡</text>
-  <text x="760" y="779" class="room-note">东窗＋北窗｜双面采光</text>
+  <text x="760" y="677" class="room-title">卧室 2</text>
+  <text x="760" y="704" class="room-note">4.0×3.70＝14.8㎡</text>
+  <text x="760" y="726" class="room-note">东窗＋北窗｜双面采光</text>
 
   <!-- 室外 -->
   <path d="M955 257 H895" class="dim" marker-end="url(#arrow)"/>
