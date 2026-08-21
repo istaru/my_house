@@ -12,14 +12,19 @@
         background: #f4f6f8;
       }
 
-      body {
+      html, body {
         margin: 0;
+        height: 100%;
       }
 
       main {
+        display: flex;
+        flex-direction: column;
         width: min(1440px, calc(100% - 32px));
+        height: 100vh;
         margin: 0 auto;
-        padding: 24px 0 40px;
+        padding: 24px 0;
+        box-sizing: border-box;
       }
 
       header {
@@ -38,19 +43,22 @@
       }
 
       .sheet {
-        overflow: auto;
+        flex: 1;
+        min-height: 0;
+        display: flex;
         padding: 12px;
         background: #fff;
         border: 1px solid #dce1e8;
         border-radius: 12px;
         box-shadow: 0 8px 28px rgb(23 32 51 / 8%);
+        box-sizing: border-box;
       }
 
       img {
         display: block;
         width: 100%;
-        min-width: 900px;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
       }
 
       .links {
