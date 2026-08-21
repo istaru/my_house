@@ -336,7 +336,7 @@
   <text x="90" y="196" class="area-note">四间卧室各 14.8 平方米</text>
 
   <!-- ============ 说明 ============ -->
-  <g transform="translate(1272 285)">
+  <g transform="translate(1295 285)">
     <text x="0" y="0" class="note" font-weight="700">说　明</text>
     <text x="0" y="26" class="note">1. 门洞尺寸</text>
     <text x="0" y="44" class="note">　 卧室与厨房 M0921（900×2100）</text>
@@ -360,7 +360,7 @@
   </g>
 
   <!-- ============ 方位 ============ -->
-  <g transform="translate(1374 158)">
+  <g transform="translate(1397 158)">
     <circle cx="0" cy="0" r="52" fill="#ffffff" stroke="#9aa3b2" stroke-width="1.5"/>
     <path d="M0 30 V-30" stroke="#172033" stroke-width="2"/>
     <path d="M-30 0 H30" stroke="#172033" stroke-width="2"/>
