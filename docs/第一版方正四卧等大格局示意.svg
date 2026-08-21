@@ -140,7 +140,7 @@
 
   <rect x="434" y="546" width="36" height="240" rx="3" class="furni"/>
   <rect x="440" y="552" width="24" height="228" rx="2" fill="#f6ece0"/>
-  <text x="452" y="666" class="furni-label" transform="rotate(-90 452 666)">通长柜 4.23m</text>
+  <text x="452" y="666" class="furni-label" transform="rotate(-90 452 666)">通长柜 4.0m</text>
 
   <rect x="715" y="536" width="90" height="36" rx="3" class="furni"/>
   <rect x="721" y="542" width="78" height="24" rx="2" fill="#f6ece0"/>

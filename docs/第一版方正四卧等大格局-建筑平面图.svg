@@ -39,8 +39,7 @@
   <rect x="40" y="40" width="1520" height="1075" class="frame"/>
   <rect x="55" y="55" width="1490" height="1045" class="frame-in"/>
 
-  <text x="90" y="96" class="sheet-title">四卧等大方案｜业主自建平面布局</text>
-  <text x="90" y="118" class="sheet-sub">尺寸单位：毫米</text>
+  <text x="90" y="96" class="sheet-title">业主自建平面布局</text>
 
   <!-- ============ 轴线（点划线，延伸出平面） ============ -->
   <path d="M420 240 V128 M630 240 V128 M840 240 V128 M1080 240 V128" class="axis-line"/>
@@ -166,7 +165,7 @@
 
   <rect x="634" y="676" width="36" height="240" rx="3" class="furni"/>
   <rect x="640" y="682" width="24" height="228" rx="2" fill="#f6ece0"/>
-  <text x="652" y="796" class="furni-label" transform="rotate(-90 652 796)">通长柜 4.23m</text>
+  <text x="652" y="796" class="furni-label" transform="rotate(-90 652 796)">通长柜 4.0m</text>
 
   <rect x="915" y="666" width="90" height="36" rx="3" class="furni"/>
   <rect x="921" y="672" width="78" height="24" rx="2" fill="#f6ece0"/>
@@ -330,10 +329,11 @@
   <text x="1201" y="592" class="dim-num" transform="rotate(-90 1201 592)">11058</text>
 
   <!-- ============ 图名与面积 ============ -->
-  <text x="90" y="156" class="plan-name">一层平面图 1:100</text>
-  <path d="M90 170 H370" stroke="#172033" stroke-width="2"/>
-  <text x="90" y="194" class="area-note">本层建筑面积：121.64 平方米</text>
-  <text x="90" y="214" class="area-note">四间卧室各 14.8 平方米</text>
+  <text x="90" y="142" class="plan-name">一层平面图 1:100</text>
+  <text x="302" y="142" class="sheet-sub">尺寸单位：毫米</text>
+  <path d="M90 156 H404" stroke="#172033" stroke-width="2"/>
+  <text x="90" y="180" class="area-note">本层建筑面积：121.64 平方米</text>
+  <text x="90" y="200" class="area-note">四间卧室各 14.8 平方米</text>
 
   <!-- ============ 说明 ============ -->
   <g transform="translate(1272 285)">
@@ -360,7 +360,7 @@
   </g>
 
   <!-- ============ 方位 ============ -->
-  <g transform="translate(1466 158)">
+  <g transform="translate(1374 158)">
     <circle cx="0" cy="0" r="52" fill="#ffffff" stroke="#9aa3b2" stroke-width="1.5"/>
     <path d="M0 30 V-30" stroke="#172033" stroke-width="2"/>
     <path d="M-30 0 H30" stroke="#172033" stroke-width="2"/>
