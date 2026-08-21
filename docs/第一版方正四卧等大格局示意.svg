@@ -50,7 +50,7 @@
   <!-- 内隔墙（缺口即门洞） -->
   <path d="M220 384 H368.8 M422.8 384 H437.2 M491.2 384 H647.2 M701.2 384 H880" class="partition"/>
   <path d="M430 130 V384 M640 130 V384" class="partition"/>
-  <path d="M361.6 384 V484.8 M361.6 532.8 V540" class="partition"/>
+  <path d="M361.6 384 V478.8 M361.6 532.8 V540" class="partition"/>
   <path d="M220 540 H368.8 M422.8 540 H430" class="partition"/>
   <path d="M430 540 V794" class="partition"/>
   <path d="M640 572 V794" class="partition"/>
@@ -70,8 +70,8 @@
   <!-- 短廊三门：卧室 3、卧室 1、卫生间，均向房间内开 -->
   <path d="M368.8 384 H422.8" stroke="#e8f0fe" stroke-width="12"/>
   <path d="M422.8 384 V330 A54 54 0 0 0 368.8 384" class="door"/>
-  <path d="M361.6 484.8 V532.8" stroke="#eef7f6" stroke-width="12"/>
-  <path d="M361.6 532.8 H313.6 A48 48 0 0 1 361.6 484.8" class="door"/>
+  <path d="M361.6 478.8 V532.8" stroke="#eef7f6" stroke-width="12"/>
+  <path d="M361.6 532.8 H307.6 A54 54 0 0 1 361.6 478.8" class="door"/>
   <path d="M368.8 540 H422.8" stroke="#e8f0fe" stroke-width="12"/>
   <path d="M422.8 540 V594 A54 54 0 0 1 368.8 540" class="door"/>
 

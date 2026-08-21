@@ -66,7 +66,7 @@
   <rect x="420" y="260" width="660" height="664" class="wall"/>
   <path d="M420 514 H568.8 M622.8 514 H637.2 M691.2 514 H847.2 M901.2 514 H1080" class="partition"/>
   <path d="M630 260 V514 M840 260 V514" class="partition"/>
-  <path d="M561.6 514 V614.8 M561.6 662.8 V670" class="partition"/>
+  <path d="M561.6 514 V608.8 M561.6 662.8 V670" class="partition"/>
   <path d="M420 670 H568.8 M622.8 670 H630" class="partition"/>
   <path d="M630 670 V924" class="partition"/>
   <path d="M840 702 V924" class="partition"/>
@@ -84,8 +84,8 @@
   <!-- ============ 门 ============ -->
   <path d="M568.8 514 H622.8" stroke="#e8f0fe" stroke-width="12"/>
   <path d="M622.8 514 V460 A54 54 0 0 0 568.8 514" class="door"/>
-  <path d="M561.6 614.8 V662.8" stroke="#eef7f6" stroke-width="12"/>
-  <path d="M561.6 662.8 H513.6 A48 48 0 0 1 561.6 614.8" class="door"/>
+  <path d="M561.6 608.8 V662.8" stroke="#eef7f6" stroke-width="12"/>
+  <path d="M561.6 662.8 H507.6 A54 54 0 0 1 561.6 608.8" class="door"/>
   <path d="M568.8 670 H622.8" stroke="#e8f0fe" stroke-width="12"/>
   <path d="M622.8 670 V724 A54 54 0 0 1 568.8 670" class="door"/>
   <path d="M637.2 514 H691.2" stroke="#e8f0fe" stroke-width="12"/>
@@ -111,7 +111,7 @@
   <text x="735" y="250" class="tag">C1815</text>
   <text x="960" y="250" class="tag">C2015</text>
   <text x="408" y="387" class="tag" transform="rotate(-90 408 387)">C1815</text>
-  <text x="408" y="592" class="tag" transform="rotate(-90 408 592)">C0909</text>
+  <text x="408" y="592" class="tag" transform="rotate(-90 408 592)">C0915</text>
   <text x="408" y="797" class="tag" transform="rotate(-90 408 797)">C1815</text>
   <text x="1092" y="387" class="tag" transform="rotate(-90 1092 387)">C1815</text>
   <text x="1092" y="608" class="tag" transform="rotate(-90 1092 608)">C2325</text>
@@ -125,7 +125,7 @@
   <text x="874" y="506" class="tag">M0921</text>
   <text x="595" y="662" class="tag">M0921</text>
   <text x="874" y="694" class="tag">M0921</text>
-  <text x="551" y="638" class="tag" transform="rotate(-90 551 638)">M0821</text>
+  <text x="551" y="636" class="tag" transform="rotate(-90 551 636)">M0921</text>
 
   <!-- ============ 家具 ============ -->
   <rect x="465" y="670" width="90" height="120" rx="5" fill="#f6ece0" stroke="#c9a877" stroke-width="2"/>
@@ -340,7 +340,7 @@
     <text x="0" y="0" class="note" font-weight="700">说　明</text>
     <text x="0" y="26" class="note">1. 门洞尺寸</text>
     <text x="0" y="44" class="note">　 卧室与厨房 M0921（900×2100）</text>
-    <text x="0" y="62" class="note">　 卫生间 M0821（800×2100）</text>
+    <text x="0" y="62" class="note">　 卫生间 M0921（900×2100）</text>
     <text x="0" y="80" class="note">　 正门 M1827（1800×2700 双开）</text>
     <text x="0" y="106" class="note">2. 除正门外门垛统一 120</text>
     <text x="0" y="124" class="note">　 门垛与全图尺寸为轴线分格值</text>
