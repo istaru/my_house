@@ -121,6 +121,31 @@
   <rect x="610" y="219" width="16" height="34" rx="4" fill="#e8dcc8"/>
   <rect x="610" y="261" width="16" height="34" rx="4" fill="#e8dcc8"/>
 
+  <!-- 床头柜 450×450：卧室 3／4 床头两侧各一个；卧室 1／2 一侧被门扇开启占位，只设一个 -->
+  <rect x="238" y="540" width="27" height="27" rx="3" class="furni"/>
+  <rect x="243" y="545" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <text x="245" y="590" class="furni-label" transform="rotate(-90 245 590)">床头柜</text>
+  <text x="257" y="592" class="furni-label" transform="rotate(-90 257 592)">450×450</text>
+
+  <rect x="805" y="572" width="27" height="27" rx="3" class="furni"/>
+  <rect x="810" y="577" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <text x="844" y="590" class="furni-label" transform="rotate(-90 844 590)">床头柜</text>
+  <text x="856" y="596" class="furni-label" transform="rotate(-90 856 596)">450×450</text>
+
+  <rect x="403" y="185" width="27" height="27" rx="3" class="furni"/>
+  <rect x="408" y="190" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <rect x="403" y="302" width="27" height="27" rx="3" class="furni"/>
+  <rect x="408" y="307" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <text x="410" y="158" class="furni-label" transform="rotate(-90 410 158)">床头柜</text>
+  <text x="422" y="158" class="furni-label" transform="rotate(-90 422 158)">450×450</text>
+
+  <rect x="613" y="185" width="27" height="27" rx="3" class="furni"/>
+  <rect x="618" y="190" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <rect x="613" y="302" width="27" height="27" rx="3" class="furni"/>
+  <rect x="618" y="307" width="17" height="17" rx="2" fill="#f6ece0"/>
+  <text x="620" y="158" class="furni-label" transform="rotate(-90 620 158)">床头柜</text>
+  <text x="632" y="158" class="furni-label" transform="rotate(-90 632 158)">450×450</text>
+
   <!-- 六组 0.6m 深长柜：四间衣柜、堂屋通长柜、客餐厅电视柜，均避开门扇开启范围 -->
   <rect x="394" y="600" width="36" height="186" rx="3" class="furni"/>
   <rect x="400" y="606" width="24" height="174" rx="2" fill="#f6ece0"/>
